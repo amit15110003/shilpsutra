@@ -12,6 +12,7 @@
     <script src="<?php echo base_url();?>media/js/jquery.elevatezoom.js"></script>
     <!-- Bootstrap -->
     <link href="<?php echo base_url();?>media/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>media/css/bootstrapPlusPlus.css" rel="stylesheet">
     <link href="<?php echo base_url();?>media/css/animate.css" rel="stylesheet">
     <link href="<?php echo base_url();?>media/css/bootstrap-dropdownhover.css" rel="stylesheet">
     <link href="<?php echo base_url();?>media/css/style.css" rel="stylesheet">

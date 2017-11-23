@@ -464,6 +464,20 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.showcase1  h3 
+{   color: #fff;
+   background-color: #000;
+   border-radius:50%;
+   padding-top:20px;
+   padding-bottom:20px;
+   opacity: 0.7;
+   font-size:34px;
+    position: absolute;
+    display: block; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .dropdown ul li a
 {
         font-size: 1em;

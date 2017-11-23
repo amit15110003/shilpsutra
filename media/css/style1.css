@@ -44,3 +44,6 @@ textarea:focus,
 button:focus {
     outline: none;
 }
+.img-circle {
+    border-radius: 50%;
+}
