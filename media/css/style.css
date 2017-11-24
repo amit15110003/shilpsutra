@@ -11,28 +11,33 @@ body{
 }
 .navbar-default{
     background-color:#fff !important;
-    height: 60px;
     border:none !important;
 }
 
 .navbar-header a
 {   
-    padding-top: 5px;
+    padding-top: 15px;
     color:#000 !important;
-    font-size: 18px;
+    font-size: 20px;
 }
 .navbar-nav li 
 {
-    padding-top: 5px;
+    padding-top: 80px;
+} 
+.navbar-nav
+{
+    padding-bottom: 0px !important;
 } 
 .navbar-nav li a{
     color:#404040 !important;
-    font-size: 18px;
+    font-size: 16px !important;
+    font-weight: 500;
+    padding-bottom: 5px !important;
 } 
 .navbar-nav li a:hover{
     border-style: solid;
     background-color: #fff !important;
-    border-width: 0px 0px 1px 0px;
+    border-width: 0px 0px 2px 0px;
      border-color: #000;
     color:#000 !important;
 } 
@@ -40,7 +45,16 @@ body{
     background-color: #fff !important;
     color:#000 !important;
 }
-
+.header-img
+{
+  position:absolute;padding-top:10px;left:43%;  
+}
+@media (max-width: 460px) {
+  .header-img
+    {
+      display:none; 
+    }
+}
 .navbar-mobile
 {
   border:none;   
@@ -652,16 +666,7 @@ button:active {
     background-color: #14ad8f !important;
     color:#fff;
 }
-.header-img
-{
-  position:absolute;top:20px;left:43%;  
-}
-@media (max-width: 460px) {
-  .header-img
-    {
-      display:none; 
-    }
-}
+
 .pagination li a
 {
     color:#14ad8f !important;

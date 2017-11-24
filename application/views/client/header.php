@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>THE HIPPOGRIFF</title>
+    <title>Shilpsutra</title>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="<?php echo base_url();?>media/js/jquery.elevatezoom.js"></script>
     <!-- Bootstrap -->
     <link href="<?php echo base_url();?>media/css/bootstrap.css" rel="stylesheet">
-    <link href="<?php echo base_url();?>media/css/bootstrapPlusPlus.css" rel="stylesheet">
+    <!--<link href="<?php echo base_url();?>media/css/bootstrapPlusPlus.css" rel="stylesheet">-->
     <link href="<?php echo base_url();?>media/css/animate.css" rel="stylesheet">
     <link href="<?php echo base_url();?>media/css/bootstrap-dropdownhover.css" rel="stylesheet">
     <link href="<?php echo base_url();?>media/css/style.css" rel="stylesheet">
@@ -38,8 +38,13 @@
   </head>
   <body>
   <!--header-->
-  <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container" style="padding-right:15px;padding-left:8px;">
+
+  <div class="row" style="background-color: #000; height: 30px;">fds</div>
+  <div class="container-fluid" style="">
+
+  <div class="header-img" style="">
+          <a href="<?php echo base_url(""); ?>"><img src="<?php echo base_url();?>media/image/logo.jpg" class="img-responsive"  style="height:70px;"></a>
+  </div>
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header" style="padding-left: 10px;">
       <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" >
@@ -97,67 +102,34 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-       <li class="dropdown" style="margin-left:6px;">
-          <a class="dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown" style="border:solid 1px #ccc;">
-           SHOP BY CATEGORY
-          </a>
-          <ul class="dropdown-menu">
-            <?php 
+        <?php 
                 $details=$this->user->showcategory();
                 foreach ($details as $row ) {
                   $category=str_replace(' ', '-', $row->category);?>
-            <li>
-                <a href="<?php echo base_url("index.php/product/category/$category"); ?>"><?php echo $row->category;?></a>
-            </li>
-            <?php }?>
-          </ul>
-        </li>
-       <li class="dropdown" style="margin-left:6px;">
-          <a class="dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown" style="border:solid 1px #ccc;">
-           SHOP BY ARTIST
-          </a>
-          <ul class="dropdown-menu multi-column columns-3">
-                <div class="row">
-                  <?php 
-             $i=1;
-                $details=$this->user->showartist();
-                foreach ($details as $row ) {
-                  $artist=str_replace(' ', '-', $row->artist);?>
-            <?php if($i%8==1){?>
-            <div class="col-xs-6 col-md-3">
-               <ul class="multi-column-dropdown">
-            <?php }?>
-                 <li><a href="<?php echo base_url("index.php/product/artist/$artist"); ?>"><?php echo $row->artist;?></a></li>
-            <?php if($i%8==0){?>    
-              </ul>
-              </div>
-            <?php }?>
-            <?php $i++;}?>
-               </div>   
-          </ul>
-        </li>
-      </ul>
-      <div class="header-img" style="">
-          <a href="<?php echo base_url(""); ?>"><img src="<?php echo base_url();?>media/image/Hippogrifftypeteal.png" class="img-responsive"></a>
-      </div>
-      <ul class="nav navbar-nav navbar-right">
           <li>
+            <a href="<?php echo base_url("index.php/product/category/$category"); ?>">
+            <?php echo $row->category;?></a>
+          </li>
+        <?php }?>
+      </ul>
+      <ul class="nav navbar-nav navbar-right" style="padding-right: 20px;">
+          <!--<li>
               <?php $attributes = array("name" => "search");
                       echo form_open("home/search_keyword", $attributes);?>
               <div class="form-inline" style="padding-top:10px;">
-               <div class = "input-group class="form-inline" style="border-radius:0px !important;">
-               <input type = "text" class = "form-control" placeholder="Search" name="keyword" style="border-radius:0px !important;">
+               <div class = "input-group form-inline" style="border-radius:20px !important;">
+               <input type = "text" class = "form-control" placeholder="Search" name="keyword" style="border-radius:20px !important;border: solid 1px #000;">
                
                <span class = "input-group-btn">
-                  <button class = "btn btn-default" type = "submit" style="border-radius:0px !important;">
+                  <li><a class = "btn btn-default" type = "submit" style="border-radius:0px !important;">
                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                  </button>
+                  </a></li>
                </span>
                
             </div>
               </div>
                   <?php echo form_close(); ?>
-             </li>
+             </li>-->
         <?php if ($this->session->userdata('fname')){ ?>
         <li class="dropdown">
           <a class=" dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown">
@@ -173,12 +145,12 @@
           </ul>
         </li>
         <?php } else{?>
-        <li><a data-toggle="modal" data-target=".login"><span class="glyphicon glyphicon-user" aria-hidden="true"> </span></a></li>
+        <li><a data-toggle="modal" data-target=".login"><img src="<?php echo base_url();?>media/image/user.png " class="img-responsive center-block" style="height: 20px;"></a></li>
         <?php }?>
         <li>
           <a href="<?php echo base_url("index.php/cart"); ?>">
-              <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
-              <span class="badge" id="cartcounter1">
+              <img src="<?php echo base_url();?>media/image/cart.png " class="img-responsive center-block" style="height: 20px;">
+              <!--<span class="badge" id="cartcounter1">
               <?php 
             if(!empty($this->session->userdata('uid')))
             {
@@ -202,7 +174,7 @@
                echo $i;
             }
             else{echo"0";} ?>
-              </span>
+              </span>-->
             </a>
           </li>
       </ul>
