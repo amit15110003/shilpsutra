@@ -31,7 +31,7 @@ body{
 .navbar-nav li a{
     color:#404040 !important;
     font-size: 14px !important;
-    font-weight: 700;
+    font-weight: 600;
     padding-bottom: 5px !important;
 } 
 .navbar-nav li a:hover{

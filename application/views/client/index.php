@@ -110,13 +110,30 @@
     		
     	</div>
     </div>
-    <div class="container-fluid">
+	<div class="gap"></div>
+    <div class="container" style="padding-top: 50px;">
     	<div class="col-md-3">
-    		<div class="product-circle">
-    			<img src="">
+    		<div class="product-circle" style="border-radius:50%;display: block;height: 250px;width: 250px;">
+    			<img src="https://www.shilpsutra.com/upload/stadvancedbanner/vintage.png" style="border-radius: 50%;height: 250px;width: 250px;">
+    		</div>
+    	</div>
+    	<div class="col-md-3">
+    		<div class="product-circle" style="border-radius:50%;display: block;height: 250px;width: 250px;">
+    			<img src="https://www.shilpsutra.com/upload/stadvancedbanner/vintage.png" style="border-radius: 50%;height: 250px;width: 250px;">
+    		</div>
+    	</div>
+    	<div class="col-md-3">
+    		<div class="product-circle" style="border-radius:50%;display: block;height: 250px;width: 250px;">
+    			<img src="https://www.shilpsutra.com/upload/stadvancedbanner/vintage.png" style="border-radius: 50%;height: 250px;width: 250px;">
+    		</div>
+    	</div>
+    	<div class="col-md-3">
+    		<div class="product-circle" style="border-radius:50%;display: block;height: 250px;width: 250px;">
+    			<img src="https://www.shilpsutra.com/upload/stadvancedbanner/vintage.png" style="border-radius: 50%;height: 250px;width: 250px;">
     		</div>
     	</div>
     </div>
+    <div class="gap"></div>
     <div class="container-fluid">
     	<div class="col-md-12 " style="padding:10%;">
     		<img src="https://media.chumbak.com/media/prismic/ad8bb3399c24a980f314510ef7600cc6c0df32e9_fanreel_d.jpg" class="img-responsive center-block">
