@@ -38,12 +38,12 @@
   </head>
   <body>
   <!--header-->
-
-  <div class="row" style="background-color: #000; height: 30px;">fds</div>
-  <div class="container-fluid" style="">
+   <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="row" style="background-color: #000; height: 25px;">fds</div>
+  <div class="container" style="">
 
   <div class="header-img" style="">
-          <a href="<?php echo base_url(""); ?>"><img src="<?php echo base_url();?>media/image/logo.jpg" class="img-responsive"  style="height:70px;"></a>
+          <a href="<?php echo base_url(""); ?>"><img src="<?php echo base_url();?>media/image/logo.jpg" class="img-responsive"  style="height:60px;"></a>
   </div>
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header" style="padding-left: 10px;">
@@ -102,6 +102,10 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+          <li>
+            <a href="<?php echo base_url(''); ?>">
+            HOME</a>
+          </li>
         <?php 
                 $details=$this->user->showcategory();
                 foreach ($details as $row ) {
