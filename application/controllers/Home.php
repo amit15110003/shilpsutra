@@ -27,13 +27,38 @@ class Home extends CI_Controller {
 		$this->load->view('client/about');
 		$this->load->view('client/footer');
 	}
+	public function size()
+	{	
+		$this->load->view('client/header');
+		$this->load->view('client/size');
+		$this->load->view('client/footer');
+	}
 	public function contact()
 	{	
 		$this->load->view('client/header');
 		$this->load->view('client/contact');
 		$this->load->view('client/footer');
 	}
-	public function terms_and_condition()
+	public function international()
+	{	
+		$this->load->view('client/header');
+		$this->load->view('client/international');
+		$this->load->view('client/footer');
+	}
+	public function refund()
+	{	
+		$this->load->view('client/header');
+		$this->load->view('client/refund');
+		$this->load->view('client/footer');
+	}
+	public function care()
+	{	
+		$this->load->view('client/header');
+		$this->load->view('client/care');
+		$this->load->view('client/footer');
+	}
+
+	public function terms()
 	{	
 		$this->load->view('client/header');
 		$this->load->view('client/terms');
@@ -49,6 +74,12 @@ class Home extends CI_Controller {
 	{	
 		$this->load->view('client/header');
 		$this->load->view('client/faq');
+		$this->load->view('client/footer');
+	}
+	public function delivery()
+	{	
+		$this->load->view('client/header');
+		$this->load->view('client/delivery');
 		$this->load->view('client/footer');
 	}
 	function search_keyword()
