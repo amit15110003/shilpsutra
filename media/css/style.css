@@ -31,7 +31,7 @@ body{
 .navbar-nav li a{
     color:#404040 !important;
     font-size: 14px !important;
-    font-weight: 500;
+    font-weight: 700;
     padding-bottom: 5px !important;
 } 
 .navbar-nav li a:hover{
@@ -236,19 +236,26 @@ body{
 /*
 */
 /*product landing*/
-.product-banner
+.product-banner-row
 {
  background-color: #f4f4f4;
-  padding: 2%;
+ padding: 20px 10px 20px 10px;
 }
-@media (max-width: 768px) {
+.product-banner
+{
+ background-color: #fff;
+ padding: 10px 10px 10px 10px;
+ margin: 10px 0px 10px 0px;
+ box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+@media (min-width: 768px) {
   .banner-small
   {
-    height:200px !important;
+    height:300px;padding: 10px 10px 10px 10px;
   }
   .banner-large
   {
-    height:400px !important;
+    height:400px;padding: 10px 10px 10px 10px;
   }
 }
 /*product landing*/
