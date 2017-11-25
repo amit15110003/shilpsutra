@@ -4,16 +4,36 @@
 			<hr>
 			
 			<div class="container">
+      <div class="col-md-3  col-xs-12 text-center">
+          <div class="">
+          <h3 class="theme-color text-center" style="color: #000;">Follow us</h3>
+            <div class="follow-icon text-center">
+                    <a href="" class="follow-icon-img"><img class="img-responsive  center-block" src="<?php echo base_url();?>media/image/FB-01.png" style="width: 35px; height: 35px;"></a>
+              </div>
+            <div class=" follow-icon text-center">
+                   <a href="" class="follow-icon-img"> <img class="img-responsive  center-block" src="<?php echo base_url();?>media/image/Insta-01.png" style="width: 35px; height: 35px;" ></a>
+              </div>
+            <div class="follow-icon text-center" >
+                    <a href="" class="follow-icon-img"><img class="img-responsive  center-block" src="<?php echo base_url();?>media/image/twitter.png" style="width: 35px; height: 35px;" ></a>
+              </div>
+            <div class="follow-icon text-center" >
+                    <a href="" class="follow-icon-img"><img class="img-responsive  center-block" src="<?php echo base_url();?>media/image/Youtube-01.png" style="width: 35px; height: 35px;" ></a>
+              </div>
+              <div class="follow-icon text-center" >
+                    <a href="" class="follow-icon-img"><img class="img-responsive  center-block" src="<?php echo base_url();?>media/image/GP-01.png" style="width: 35px; height: 35px;" ></a>
+              </div>
+          </div>
+          <br>
+          
+        </div>
 				<div class="col-md-3 col-xs-6">
                     <h3>SHOP</h3>
-					<?php 
-                        $details=$this->user->showcategory();
-                        foreach ($details as $row ) {
-                          $category=str_replace(' ', '-', $row->category);?>
-                    <li style="list-style: none;">
-                        <a href="<?php echo base_url("index.php/product/category/$category"); ?>" style=" text-decoration: none;color: #000;" ><?php echo $row->category;?></a>
-                    </li>
-                    <?php }?>
+					<li style="list-style: none;"><a href="<?php echo base_url("index.php/home/about"); ?>" style=" text-decoration: none;color: #000;">About us</a></li>
+                <li style="list-style: none;"><a href="#" style=" text-decoration: none;color: #000;"> Blog </a></li>
+                <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/contact"); ?>" style=" text-decoration: none;color: #000;"> Contact us </a></li>
+                <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/faqs"); ?>" style=" text-decoration: none;color: #000;">FAQs</a></li>
+                <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/privacy_policy"); ?>" style=" text-decoration: none;color: #000;">Privacy Policy</a></li>
+                <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/terms_and_condition"); ?>"  style=" text-decoration: none;color: #000;">Terms & Conditions</a></li>
 				</div>
 				<div class="col-md-3 col-xs-6" >
 				        <h3>LINKS</h3>
@@ -24,33 +44,19 @@
 				        <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/privacy_policy"); ?>" style=" text-decoration: none;color: #000;">Privacy Policy</a></li>
 				        <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/terms_and_condition"); ?>"  style=" text-decoration: none;color: #000;">Terms & Conditions</a></li>
 				</div>
+        <div class="col-md-3 col-xs-6" >
+                <h3>LINKS</h3>
+                <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/about"); ?>" style=" text-decoration: none;color: #000;">About us</a></li>
+                <li style="list-style: none;"><a href="#" style=" text-decoration: none;color: #000;"> Blog </a></li>
+                <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/contact"); ?>" style=" text-decoration: none;color: #000;"> Contact us </a></li>
+                <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/faqs"); ?>" style=" text-decoration: none;color: #000;">FAQs</a></li>
+                <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/privacy_policy"); ?>" style=" text-decoration: none;color: #000;">Privacy Policy</a></li>
+                <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/terms_and_condition"); ?>"  style=" text-decoration: none;color: #000;">Terms & Conditions</a></li>
+        </div>
 				<div class="col-md-3 col-xs-12" >
 				    
 				</div>
-				<div class="col-md-3  col-xs-12 text-center">
-					<div class="">
-					<h3 class="theme-color text-center">Follow us</h3>
-						<div class="follow-icon text-center">
-					          <a href="" class="follow-icon-img"><img class="img-responsive  center-block" src="<?php echo base_url();?>media/image/FB-01.png"></a>
-					    </div>
-						<div class=" follow-icon text-center">
-					         <a href="" class="follow-icon-img"> <img class="img-responsive  center-block" src="<?php echo base_url();?>media/image/Insta-01.png" ></a>
-					    </div>
-						<div class="follow-icon text-center" >
-					          <a href="" class="follow-icon-img"><img class="img-responsive  center-block" src="<?php echo base_url();?>media/image/Mail-01.png" ></a>
-					    </div>
-						<div class="follow-icon text-center" >
-					          <a href="" class="follow-icon-img"><img class="img-responsive  center-block" src="<?php echo base_url();?>media/image/twitter.png" ></a>
-					    </div>
-						<div class="follow-icon text-center" >
-					          <a href="" class="follow-icon-img"><img class="img-responsive  center-block" src="<?php echo base_url();?>media/image/Youtube-01.png" ></a>
-					    </div>
-					</div>
-					<br>
-					<p>We Accept</p>
-                    <img src="<?php echo base_url();?>media/image/payment.png" class="img-responsive  center-block"><br>
-				    <li style="list-style: none;"><a href=""  style=" text-decoration: none;color: #000;">Copyright © 2017. THEHIPPOGRIFF. </a></li>
-				</div>
+				
 			</div>
 		</div>
 		<!--<div class="row">
