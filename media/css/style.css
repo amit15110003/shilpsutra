@@ -12,26 +12,26 @@ body{
 .navbar-default{
     background-color:#fff !important;
     border:none !important;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.09);
 }
 
 .navbar-header a
 {   
-    padding-top: 15px;
+    padding-top: 10px;
     color:#000 !important;
-    font-size: 20px;
 }
 .navbar-nav li 
 {
-    padding-top: 80px;
+    padding-top: 60px;
 } 
 .navbar-nav
 {
-    padding-bottom: 0px !important;
+    padding-bottom: 0px !important; 
 } 
 .navbar-nav li a{
     color:#404040 !important;
-    font-size: 16px !important;
-    font-weight: 500;
+    font-size: 14px !important;
+    font-weight: 700;
     padding-bottom: 5px !important;
 } 
 .navbar-nav li a:hover{
@@ -47,7 +47,7 @@ body{
 }
 .header-img
 {
-  position:absolute;padding-top:10px;left:43%;  
+  position:absolute;padding-top:10px;left:45%; 
 }
 @media (max-width: 460px) {
   .header-img
@@ -144,6 +144,121 @@ body{
 .carousel-caption{
     transform: translate3d(0px, 0px, 0px);
 }
+
+/*
+*/
+#slider-text{
+  padding-top: 40px;
+  display: block;
+}
+#slider-text .col-md-6{
+  overflow: hidden;
+}
+
+#slider-text h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin: 30px auto;
+  padding-left: 40px;
+}
+#slider-text h2::after{
+  border-top: 2px solid #c7c7c7;
+  content: "";
+  position: absolute;
+  bottom: 35px;
+  width: 100%;
+  }
+
+#itemslider h4{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  margin: 10px auto 3px;
+}
+#itemslider h5{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 3px auto 2px;
+}
+#itemslider h6{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;;
+  font-size: 10px;
+  margin: 2px auto 5px;
+}
+.badge {
+  background: #b20c0c;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  line-height: 31px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  border: 2px solid #FFF;
+  box-shadow: 0 0 0 1px #b20c0c;
+  top: 5px;
+  right: 25%;
+}
+#slider-control img{
+  padding-top: 60%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 992px){
+#slider-control img {
+  padding-top: 70px;
+  margin: 0 auto;
+}
+}
+
+.carousel-showmanymoveone .carousel-control {
+  width: 4%;
+  background-image: none;
+}
+.carousel-showmanymoveone .carousel-control.left {
+  margin-left: 5px;
+}
+.carousel-showmanymoveone .carousel-control.right {
+  margin-right: 5px;
+}
+.carousel-showmanymoveone .cloneditem-1,
+.carousel-showmanymoveone .cloneditem-2,
+.carousel-showmanymoveone .cloneditem-3,
+.carousel-showmanymoveone .cloneditem-4,
+.carousel-showmanymoveone .cloneditem-5 {
+  display: none;
+}
+
+/*
+*/
+/*product landing*/
+.product-banner-row
+{
+ background-color: #f4f4f4;
+ padding: 20px 10px 20px 10px;
+}
+.product-banner
+{
+ background-color: #fff;
+ padding: 10px 10px 10px 10px;
+ margin: 10px 0px 10px 0px;
+ box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+@media (min-width: 768px) {
+  .banner-small
+  {
+    height:300px;padding: 10px 10px 10px 10px;
+  }
+  .banner-large
+  {
+    height:400px;padding: 10px 10px 10px 10px;
+  }
+}
+/*product landing*/
 .theme-color
 {
 	color: #14ad8f;
