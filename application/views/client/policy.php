@@ -5,94 +5,48 @@
 </div>
 <div class="container">
 
-<p >We have created this privacy statement in order to demonstrate our firm commitment to privacy.  This document discloses our information gathering and usage practices.</p>
-<p >This Privacy Policy (“Privacy Policy”) applies to <a href="http://thehippogriff.com/" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=http://thehippogriff.com&amp;source=gmail&amp;ust=1487421076911000&amp;usg=AFQjCNFBevW7h1r_mFAcp46JWJ5mYM3lPQ">thehippogriff.com</a> (“Website”) and the services of The Hippogriff (hereinafter referred as the “firm” or “We”).</p>
-<p >The purpose of Privacy Policy is to ensure continuing commitment to the privacy of Personal Information provided by those visiting, registering, and interacting with the said website; further, for the purpose of this Privacy Policy, Personal Information shall mean, any and all, information collected in accordance with this Privacy Policy. The terms “users” or “you” as used in this Privacy Policy, refer to Persons, who access or use the Website and share their Personal Information.</p>
-<p >A. COLLECTION AND USE OF PERSONAL INFORMATION</p>
-<p >Personal information collected from you may include your name, postal address, email address, landline or mobile telephone number, location details as well as other non-sensitive personal information. If you use our web sites, we may also collect information about you or your computer when you browse to allow you to use the services available.</p>
-<p >We may store your browsing information, primarily, to provide services and features that most likely meet your needs, and to customize our Website to make your experience safer and easier. More importantly, while doing so we collect personal information from you that we consider necessary for achieving this purpose.</p>
-<p >We may track certain information about you based upon your behaviour on our Website. We use this information to do internal research on our users&#8217; demographics, interests, and behaviour to better understand, protect and serve our users. This information is compiled and analysed on an aggregated basis. This information may include the URL that you just came from (whether this URL is on our Website or not), which URL you next go to (whether this URL is on our Website or not), your computer browser information, and your IP address.</p>
-<p >We may collect information to understand the customer or client expectation and behaviour.</p>
-<p >If you choose to post reviews and tips about our services or post messages or leave feedback, we retain this information as necessary to resolve disputes, provide customer support and troubleshoot problems as permitted by law.</p>
-<p >The email address/ phone information that you provide on the Website may be used to contact you about service offers from us. We may also use that information to let you know of additional products and services from other companies that you might be interested in. If you do not wish to receive these kinds of communications, you may not opt to receive such communication or unsubscribe in later stage.</p>
-<p >We may use your Personal Information for the following purposes:</p>
-<ol>
-<li >
-<p >to provide the requested services and in optimization of our Website.</p>
-</li>
-<li >
-<p >to contact/ communicate you from time to time with critical user or service updates or other information important for our services;</p>
-</li>
-<li >
-<p >to customize, measure and improve our services, content and advertising;</p>
-</li>
-<li >
-<p >to promote the services or special offers or promotions related to our Website and services or those of our subsidiaries and/or affiliates;</p>
-</li>
-<li >
-<p >to compare information for accuracy, and verify it with third parties;</p>
-</li>
-<li >
-<p >to prevent illegal activity; and</p>
-</li>
-<li >
-<p >for the enforcement of this Privacy Policy and/or our Terms or any other purpose referenced herein or therein.</p>
-</li>
-</ol>
-<p >B. WEBSITE USAGE &amp; COOKIES</p>
-<p >We may gather certain information about the User, such as Internet protocol (IP) addresses, domain name, browser type, operating system, the date and time of the visit and the pages visited. We make no attempt to link these addresses with the identity of individuals visiting our Website unless an attempt to damage the Website has been detected. We may use your IP address to help diagnose problems with our server, or to administer our web sites. We may conduct analyses of user traffic to measure the use of our sites and to improve the content of our web sites and our services.</p>
-<p >We use data collection devices such as &#8220;cookies&#8221; on certain pages of the Website to help analyse our web page flow, measure promotional effectiveness, and promote trust and safety. We use both “session ID cookies or session cookies” and “persistent cookies.” We use session cookies to make it easier for you to navigate the Website. A session cookie expires when you close your browser. If you check “remember me on this computer” when logging in to the Website, We also sets a persistent cookie to store you username passwords, so you do not have to enter it more than once. The persistent cookie also enables us to track and target the interests of users to enhance the experience on the Website. The persistent cookie is removed when you uncheck the “remember my email address” check box. For avoidance of doubt it is clarified that some of our business partners (such as advertisers) use cookies on the Website. We have no access to or control over these cookies. This Privacy Policy covers the use of cookies by us only and does not cover the use of cookies by any advertisers.</p>
-<p >C. SECURITY OF PERSONAL INFORMATION</p>
-<p >We use appropriate administrative, technical, and physical measures to safeguard personal information against loss, theft and unauthorised uses, access or modifications. If you are a user of our websites and have a password, you should not share your password with anyone else.</p>
-<p >Our Website has stringent security measures in place to protect the loss, misuse, and alteration of the information under our control. Whenever you change or access your account information, we offer the use of a secure server. Once your information is in our possession we adhere to strict security guidelines, protecting it against unauthorized access. For example, we use “_________” to ensure that all transfer of user data and transactions are encrypted and secured, as per SSL (Secure Sockets Layer) criteria etc.</p>
-<p >However, it remains each user&#8217;s responsibility:</p>
-<ol>
-<li >
-<p >to protect against unauthorized access to your use of the Website;</p>
-</li>
-<li >
-<p >to ensure no-one else uses the Website while the user&#8217;s machine is &#8220;logged on&#8221; to the Website service;</p>
-</li>
-<li >
-<p >to log off or exit from Website when not using it; and</p>
-</li>
-<li >
-<p >where relevant, to keep his/her password or other access information secret.</p>
-</li>
-</ol>
-<p >All Personal Information submitted to us is stored on a secure server. We do not store credit card numbers or related identifying information on any Website server. All such information is stored by our credit card processing partner(s), who are obligated to store such information using secure methods.  We also use third parties to help us optimize our Website flow, content and advertising.  All of our partners are under contract with us and they are obligated to keep your information confidential.</p>
-<p >D. DISCLOSURE TO THIRD PARTY</p>
-<p >We reserve the right, and you consent thereto, to share Personal Information with companies, organizations, advertiser  or individuals outside of the Firm, if we have a good-faith belief that access, use, preservation or disclosure of the information is reasonably necessary to:</p>
-<ol>
-<li >
-<p >meet any applicable law, regulation, legal process or enforceable governmental request.</p>
-</li>
-<li >
-<p >enforce applicable Terms of Use, including investigation of potential violations.</p>
-</li>
-<li >
-<p >detect, prevent, or otherwise address fraud, security or technical issues.</p>
-</li>
-<li >
-<p >Protect against harm to the rights, property or safety of the Firm, our users or the public as required or permitted by law.</p>
-</li>
-<li >
-<p >In the event we are merged with or acquired by such firm or business entity.</p>
-</li>
-</ol>
-<p >E. PROTECTION MEASURES</p>
-<p >We take appropriate technical and organizational measures to guard against unauthorized or unlawful processing of your Personal Information and against accidental loss or destruction of, or damage to, your Personal Information. While no system is completely secure, we believe the measures implemented by our Website reduce the likelihood of security problems to a level appropriate to the type of data involved. We have security measures in place to protect our user database and access to this database is restricted internally.</p>
-<p >F. MEMBERSHIP</p>
-<p >Our site&#8217;s registration form requires you to provide us contact information.  We may use your contact information from the registration form to send you information about our firm and promotional material from some of our affiliated partners.  Your contact information is also used to contact you when necessary. You may ask us to show you the personal information we hold about you and to make corrections to it.  You can access and correct any of the personal information we hold about you by writing to us at <a href="mailto:support@thehippogriff.com" target="_blank">support@thehippogriff.com</a> If you wish to have your registration removed from our directory for any reason, you may send us an email requesting this.</p>
-<p >G. CHANGES TO PRIVACY POLICY</p>
-<p >We reserve the right to change our Privacy Policy, without prior notice, at our sole discretion. Please review our Privacy Policy periodically to be aware of any changes.</p>
-<p >H. YOUR CONSENT</p>
-<p >By using this Website and/or by providing your information, you hereby consent to the collection and use of the information you disclose on the Website in accordance with this Privacy Policy, including but not limited to your consent for sharing your information as per this Privacy Policy.</p>
-<p >If you do not agree please do not use or access our Website. By mere use of the Website, you expressly consent to our use and disclosure of your personal information in accordance with this Privacy Policy. This Privacy Policy is incorporated into and subject to the Terms of Use.</p>
-<p >I. LINKS</p>
-<p >This Website may contain links to other sites. We are not responsible for the privacy practices of such other sites. We encourage users to be aware when they leave the Website and to read the Privacy Policy of sites that collect personally identifiable information. This Privacy Policy applies only to information collected on this Website.  We have no control of either the content or privacy policies of such sites, nor should such links be considered an endorsement of these sites except where otherwise noted.</p>
-<p >J. TERM</p>
-<p >We retain your personal Information as long as is necessary for the purposes to which you consent under this Privacy Policy, or as is required by applicable law, and then we will delete it.</p>
-<p >K. Emails</p>
-<p >It is our policy to send you any email you elect to receive, in addition to customary business communications (payment confirmations, etc.).  Further, it is our policy to immediately remove any member from any mailing list upon the member&#8217;s request.  In addition, we will send newsletters and other communications to members.  Newsletters will contain clear and obvious instructions for how the member can remove him/herself from that mailing list. We do use email as a means of receiving feedback from our members, and we encourage you to email at <a href="mailto:support@thehippogriff.com" target="_blank">support@thehippogriff.com</a></p>
-</div>
+<p class="text-justify">We are Shilpsutra.com, a service provided by Shilpsutra India, Vasant Kunj, New Delhi, India – 110070. In this Privacy Policy, references to “you” mean any person submitting any data to us or our agent or the Site.</p>
+<p ><b>If you have any comments or suggestions, we would be pleased to receive them at our official address or by emailing us at care@shilpsutra.com</b></p>
+<p >Data protection is a matter of trust and your privacy is important to us. We shall therefore only use your name and other information, which relates to you in the manner set out in this Privacy Policy. We will only collect information where it is necessary for us to do so and we will only collect information if it is relevant to our dealings with you.</p>
+<p class="text-justify">We will only keep your information for as long as we are either required to by law or as is relevant for the purposes for which it was collected.</p>
+<p class="text-justify">You can visit the Site and browse without having to provide personal details. During your visit to the Site you remain anonymous and at no time can we identify you unless you have an account on the Site and log on with your user name and password.</p>
+
+
+<p ><b><u>Data that we collect</u></b></p>
+<p class="text-justify">We may collect various information if you seek to place an order for a product to us on the Site. We collect, store and process your data for processing your purchase on the Site and any possible later claims, and to provide you with our services. We may collect your title, name, gender, email address, postal address, delivery address (if different), telephone number, mobile number, fax number, payment details, payment card details or bank account details.</p>
+<p class="text-justify">We need this information in order to allow you to go ahead with placing your order for a product. We may use that data to process payment for the product and deliver the product to you. We also use that data to inform you when the product is about to be delivered.</p>
+<p class="text-justify">We may pass your name and address on to a third party in order to make delivery of the product to you (for example to our courier or supplier).</p>
+<p class="text-justify">We may also share your data with our franchisor. You further authorize the franchisor to use this information to sell products to you, directly or indirectly.</p>
+<p class="text-justify">We may also use your data in order to manage the Site, collect payment from you, enable you to subsequently use parts of the Site, detect any fraud or Site abuses, send you information relevant to the Site or our products, and in case we have any queries. Payments that you make through the Site will be processed by our company Shilpsutra India, through tie-ups with payment gateway service providers based in India (e.g. PayU)</p>
+<p class="text-justify">You must only submit to us or our agent or the Site information which is accurate and not misleading and you must keep it up to date and inform us of changes.</p>
+<p class="text-justify">Your actual order details may be stored with us and you may access this information by logging into your account on the Site. Here you can view the details of your orders that have been completed, those which are open and those which are shortly to be dispatched and administer your address details, bank details and any newsletter to which you may have subscribed. You undertake to treat the personal access data confidentially and not makeit available to unauthorized third parties. We cannot assume any liability for misuse of passwords unless this misuse is our fault.</p>
+<p class="text-justify">We shall not share any of your personal information with third parties without your explicit consent. We do not sell or rent your personal information to third parties for their marketing purposes without your explicit consent and we only use your information as described in the Privacy Policy. We view protection of your privacy as a very important community principle. We understand clearly that you and Your Information is one of our most important assets. We store and process Your Information on computers located in the India that are protected by physical as well as technological security devices. We use third parties to verify and certify our privacy principles. If you object to your Information being transferred or used in this way please do not use the site.</p>
+<p class="text-justify">Under no circumstances do we rent, trade or share your personal information that we have collected with any other company for their marketing purposes without your consent. We reserve the right to communicate your personal information to any third party that makes a legally-compliant request for its disclosure.</p>
+
+
+<p ><b><u>Credit Check and Fraud Prevention</u></b></p>
+<p class="text-justify">We use standard and authorized payment services and our Credit Check and Fraud Prevention policies are aligned to these companies. All disputes would be handled by New Delhi courts.</p>
+<p ><u>Other uses of your personal information</u></p>
+<p class="text-justify">We may also send you other information about us, the Site, our other websites, our products, sales promotions, our newsletters, SMS updates, anything relating to other companies in our group or our business partners. If you would prefer not to receive any of this additional information as detailed in this paragraph (or any part of it) please click the “unsubscribe” link in any email that we send to you or follow the unsubscription process as detailed in the SMS.</p>
+<p class="text-justify">Kindly note that unsubscribing from one medium does not automatically lead to unsubscription from the other. Within 7 working days (days which are neither (i) a Saturday or Sunday, nor (ii) a public holiday anywhere in India) of receipt of your instruction we will cease to send you information as requested. If your instruction is unclear we will contact you for clarification.</p>
+<p><u>Competitions</u></p>
+<p class="text-justify">For any competition we use the data to notify winners and advertise our offers. You can find more details where applicable in our participation terms for the respective competition.</p>
+
+<p><b><u>Third Parties and Links</u></b></p>
+<p class="text-justify">We may pass your details to other companies in our group. We may also pass your details to our agents and subcontractors to help us with any of our uses of your data set out in our Privacy Policy. For example, we may use third parties to assist us with delivering products to you, to help us to collect payments from you, to analyze data and to provide us with marketing or customer service assistance. We may exchange information with third parties for the purposes of fraud protection and credit risk reduction. We may transfer our databases containing your personal information if we sell our business or part of it. Other than as set out in this Privacy Policy, we shall NOT sell or disclose your personal data to third parties without obtaining your prior consent unless this is necessary for the purposes set out in this Privacy Policy or unless we are required to do so by law. The Site may contain advertising of third parties and links to other sites or frames of other sites. Please be aware that we are not responsible for the privacy practices or content of those third parties or other sites, nor for any third party to whom we transfer your data in accordance with our Privacy Policy.</p>
+
+
+<p><b><u>Cookies</u></b></p>
+<p class="text-justify">The acceptance of cookies is not a requirement for visiting the Site. However we would like to point out that the some functionality on the Site and ordering is only possible with the activation of cookies. Cookies are tiny text files which identify your computer to our server as a unique user when you visit certain pages on the Site and they are stored by your Internet browser on your computer’s hard drive. Cookies can be used to recognize your Internet Protocol address, saving you time while you are on, or want to enter, the Site. We only use cookies for your convenience in using the Site (for example to remember who you are when you want to amend your shopping cart without having to re-enter your email address) and not for obtaining or using any other information about you (for example targeted advertising). Your browser can be set to not accept cookies, but this would restrict your use of the Site. Please accept our assurance that our use of cookies does not contain any personal or private details and are free from viruses. If you want to find out more information about cookies, go to <b>https://www.allaboutcookies.org</b>  or to find out about removing them from your browser, go to <b>https://www.allaboutcookies.org/manage-cookies/index.html</b> .</p>
+
+
+<p><b><u>Security</u></b></p>
+<p class="text-justify">We have in place appropriate technical and security measures to prevent unauthorized or unlawful access to or accidental loss of or destruction or damage to your information. When we collect data through the Site, we collect your personal details on a secure server. We use firewalls on our servers. When we collect payment card details electronically, we use encryption by using Secure Socket Layer (SSL) coding. Whilst we are unable to guarantee 100% security, this makes it hard for a hacker to decrypt your details. You are strongly recommended not to send full credit or debit card details in unencrypted electronic communications with us. We maintain physical, electronic and procedural safeguards in connection with the collection, storage and disclosure of your information. Our security procedures mean that we may occasionally request proof of identity before we disclose personal information to you. You are responsible for protecting against unauthorized access to your password and to your computer.</p>
+
+<p><b><u>Consent</u></b></p>
+<p class="text-justify">By submitting data to us or our agent or using the Site, you consent to our use of your data in the manner set out in this Privacy Policy.</p>
+
+<p><b><u>Copyright</u></b></p>
+<p class="text-justify">We have copyright over this Privacy Policy. Use by third parties, even by way of extract, for commercial purposes is not allowed. Infringements may be subject to legal action.</p>
+<p class="text-justify">This Privacy Policy can change at any time to include / exclude clauses and <b>Shilpsutra.com</b> does not bear responsibility for updating Users on the same.</p>
+
