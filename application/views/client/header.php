@@ -43,7 +43,7 @@
   <div class="container" style="">
 
   <div class="header-img" style="">
-          <a href="<?php echo base_url(""); ?>"><img src="<?php echo base_url();?>media/image/logo.jpg" class="img-responsive"  style="height:60px;"></a>
+          <a href="<?php echo base_url(""); ?>"><img src="<?php echo base_url();?>media/image/logo.jpg" class="img-responsive"  style="height:50px;"></a>
   </div>
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header" style="padding-left: 10px;">
@@ -136,8 +136,8 @@
              </li>-->
         <?php if ($this->session->userdata('fname')){ ?>
         <li class="dropdown">
-          <a class=" dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown">
-           <?php echo $result = substr($this->session->userdata('fname'), 0, 4); ?> <span class="glyphicon glyphicon-user" aria-hidden="true">  </span>
+          <a class=" dropdown-toggle" type="button" data-toggle="dropdown" data-hover="dropdown" style="text-transform: capitalize;">
+           <?php echo $result = substr($this->session->userdata('fname'), 0, 8); ?> <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
           </a>
           <ul class="dropdown-menu">
             <li><a href="<?php echo base_url("index.php/profile"); ?>">Profile</a></li>
