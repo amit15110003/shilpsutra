@@ -56,6 +56,10 @@
 				<div class="col-md-3 col-xs-12" >
 				    
 				</div>
+
+        <div class="col-md-12" style="padding-top: 20px;">
+            <img src="<?php echo base_url();?>media/image/payment.png" class="img-responsive center-block">
+        </div>
 				
 			</div>
 		</div>
