@@ -258,7 +258,7 @@ body{
 /*product landing*/
 .theme-color
 {
-	color: #14ad8f;
+	color: #FFA3B3;
 }
 .carousel-caption h1
 {
@@ -419,7 +419,7 @@ body{
 }
 .theme-btn
 {
-    background-color: #14ad8f; border-color: #14ad8f; border-style: solid; color: #fff;height: 40px;
+    background-color: #FFA3B3; border-color: #FFA3B3; border-style: solid; color: #fff;height: 40px;
     border-radius:4px;
 }
 .theme-btn:hover
@@ -429,7 +429,7 @@ body{
 
 .theme-btn-lg
 {
-	height: 60px; background-color: #14ad8f; border-color: #14ad8f; border-style: solid; color: #fff;font-size: 1.4em; border-radius:4px;
+	height: 60px; background-color: #FFA3B3; border-color: #FFA3B3; border-style: solid; color: #fff;font-size: 1.4em; border-radius:4px;
 }
 .theme-btn-lg:hover
 {
@@ -457,8 +457,8 @@ body{
     width: 50px;
     height: 50px;
     text-align: center;
-    background-color: #14ad8f; 
-    border-color: #14ad8f; 
+    background-color: #FFA3B3; 
+    border-color: #FFA3B3; 
     border-style: solid; 
     color: #fff;
     border-radius: 50%;
@@ -681,7 +681,7 @@ ul li.hz
   height: 60px;
   text-align: center;
   padding: 15px 15px;
-  background-color: #14ad8f;
+  background-color: #FFA3B3;
   font-size: 24px;
   justify-content: center;
   line-height: 1.5;
@@ -739,12 +739,12 @@ ul li.hz
   }
 }
 button:active { 
-    background-color: #14ad8f !important;
+    background-color: #FFA3B3 !important;
     color:#fff;
 }
 
 .pagination li a
 {
-    color:#14ad8f !important;
+    color:#FFA3B3 !important;
 }
 

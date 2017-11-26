@@ -24,7 +24,7 @@
                     <p><?php echo $item['attributevalue']; ?></p>
                 </div>
                 <div class="col-md-2 col-xs-6 cart-line text-center">
-                    <h5>&#8377;  <span id="itemcost_<?php echo $item['rowid'];?>"><?php echo  $details1[0]->cost;?></span></h5>
+                    <h5>&#8377;  <span id="itemcost_<?php echo $item['rowid'];?>"><?php echo  $details[0]->cost;?></span></h5>
                 </div>
                 <div class="col-md-3 col-xs-12 cart-line">
                     <div class="text-center quantity">
@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <div class="col-md-2 col-xs-6 cart-line text-center">
-                    <h5>&#8377; <span id="cost_<?php echo $item['rowid'];?>"><?php echo  $details1[0]->cost*$item['qty'];?></span></h5>
+                    <h5>&#8377; <span id="cost_<?php echo $item['rowid'];?>"><?php echo  $details[0]->cost*$item['qty'];?></span></h5>
                 </div>
             </div><?php }}?>
             <?php foreach ($query as $row ) {
@@ -53,7 +53,7 @@
                 <div class="col-md-2 col-xs-3 cart-line text-center">
                     <h5>&#8377;  <span id="itemcost_<?php echo $row->id;?>"><?php  
                      
-                    echo $details1[0]->cost;?></span></h5>
+                    echo $details[0]->cost;?></span></h5>
                 </div>
                 <div class="col-md-3 col-xs-6 cart-line">
                     <div class="text-center quantity">
@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="col-md-2 col-xs-3 cart-line text-center">
-                    <h5>&#8377; <span id="cost_<?php echo $row->id;?>"><?php echo  $details1[0]->cost*$row->item;?></span></h5>
+                    <h5>&#8377; <span id="cost_<?php echo $row->id;?>"><?php echo  $details[0]->cost*$row->item;?></span></h5>
                 </div>
             </div>
             <?php }?>
@@ -83,14 +83,14 @@
                         {
                             $details=$this->user->get_product_by_id($item['id']);
                             $details1=$this->user->attributevalue_cost($item['attributevalue']);
-                            $i=$i+($details1[0]->cost*$item['qty']);
+                            $i=$i+($details[0]->cost*$item['qty']);
                         }
                     }
                     elseif(!empty($this->session->userdata('uid'))){
                    foreach ($query as $row ) {
                   $details=$this->user->get_product_by_id($row->productid);
                   $details1=$this->user->attributevalue_cost($row->attributevalue);
-                   $i=$i+($details1[0]->cost*$row->item);}}
+                   $i=$i+($details[0]->cost*$row->item);}}
                    echo $i;?></span></strong></h5></td>
                     </tr>
                     <tr>
@@ -108,14 +108,14 @@
                         {
                             $details=$this->user->get_product_by_id($item['id']);
                             $details1=$this->user->attributevalue_cost($item['attributevalue']);
-                            $i=$i+($details1[0]->cost*$item['qty']);
+                            $i=$i+($details[0]->cost*$item['qty']);
                         }
                     }
                     elseif(!empty($this->session->userdata('uid'))){
                    foreach ($query as $row ) {
                   $details=$this->user->get_product_by_id($row->productid);
                   $details1=$this->user->attributevalue_cost($row->attributevalue);
-                   $i=$i+($details1[0]->cost*$row->item);}}
+                   $i=$i+($details[0]->cost*$row->item);}}
                    echo $i;?></span></strong></h3></td>
                     </tr>
                 </tbody>
