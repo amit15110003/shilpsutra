@@ -5,16 +5,12 @@
          <div class="col-md-3 col-xs-6 product">
         <div class="row">
           <div class="product-img">
-                  <a href="<?php echo base_url("index.php/product/details/$category/$title"); ?>"><img src="<?php echo base_url();?>uploads/thumb/<?php echo $row->picture;?>" class="img-responsive">
+                  <a href="<?php echo base_url("index.php/product/details/$category/$title"); ?>"><img src="<?php echo base_url();?>uploads/thumb/<?php echo $row->picture;?>" class="img-responsive center-block">
                   </a>
                </div>
                <div class="text-center">
-                  <h5><b><?php echo $row->title; ?></b></h5>
-                  <h5><b>₹<?php  
-						$details=$this->user->showattribute($row->category);
-						$details1=$this->user->showattributevalue($details[0]->attribute); echo $details1[0]->cost;?></b> 
-						<?php if($details1[0]->scost !="0"){?>
-						<sub>₹<strike><?php echo $details1[0]->scost;?><?php }?></strike></sub></h5>
+                  <h4><?php echo $row->title; ?></h4>
+                  <h5><?php echo $row->cost; ?></h5>
                </div>
             </div>
             <a class="button1 theme-btn-circle" href="<?php echo base_url("index.php/product/details/$category/$title"); ?>"><i class="glyphicon glyphicon-shopping-cart"></i></a>

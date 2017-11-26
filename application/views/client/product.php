@@ -29,13 +29,13 @@
 		<div class="row">
 		<div class="col-md-12">
 		<h5><?php $Descr=entity_decode($Descr,$charset = NULL); echo auto_typography(html_escape($Descr)); ?></h5>
-		<div><span style="font-size: 24px;"><b>&#8377;<span id="pricedisplay"></span> </b></span></div>
+		<div><span style="font-size: 24px;"><b>&#8377; <?php echo $cost; ?></b></span></div>
 		</div>
 		 <?php $details=$this->user->showattribute($category);
 		 foreach($details as $row ){?>
 			<div class="col-md-6">
 				<p><?php echo $row->attribute;?></p>
-				<select class="form-control" onchange="price()" id="price">
+				<select class="form-control">
 			      <?php $details=$this->user->showattributevalue($row->attribute);
 		 			foreach($details as $row ){?>
 				 		 <option  value="<?php echo $row->cost;?>"><?php echo $row->attributevalue;?></option>
@@ -175,9 +175,7 @@
             </div>
             <div class="text-center">
               <p><a href="<?php echo base_url("index.php/product/details/$category/$title"); ?>" style="text-decoration:none;color:#000;" ><?php echo $row->title;?></a></p>
-            <p>&#8377;<?php  
-            $details=$this->user->showattribute($row->category);
-            $details1=$this->user->showattributevalue($details[0]->attribute); echo $details1[0]->cost;?></p>
+            <p>&#8377;<?php echo $row->cost;?></p>
             </div>
          </div>
         <?php }?>

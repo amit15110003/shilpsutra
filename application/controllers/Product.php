@@ -52,8 +52,8 @@ class product extends CI_Controller {
 			$data['title'] = $details[0]->title;
         	$data['Descr'] = $details[0]->Descr;
         	$data['category'] = $details[0]->category;
+        	$data['cost'] = $details[0]->cost;
         	$data['love'] = $details[0]->love;
-        	$data['artist'] = $details[0]->artist;
         	$data['tag'] = $details[0]->tag;
         	$data['review'] = $details[0]->review;
         	$data['view'] = $details[0]->view;
@@ -128,6 +128,7 @@ class product extends CI_Controller {
 			$data['title'] = $details[0]->title;
         	$data['Descr'] = $details[0]->Descr;
         	$data['category'] = $details[0]->category;
+        	$data['cost'] = $details[0]->cost;
         	$data['love'] = $details[0]->love;
         	$data['review'] = $details[0]->review;
         	$data['view'] = $details[0]->view;

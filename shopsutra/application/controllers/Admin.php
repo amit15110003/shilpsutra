@@ -276,8 +276,7 @@ class admin extends CI_Controller
                           'source_image' => $uploadData['full_path'], //get original image
                           'new_image' => $this->gallery_path.'/thumb/', //save as new image //need to create thumbs first
                           'maintain_ratio' => TRUE,
-                          'width' => 270,
-                          'height' => 270
+                          'width' => 600
                            
                         );
                         $this->load->library('image_lib', $config1); //load library
@@ -297,6 +296,7 @@ class admin extends CI_Controller
 				'title' => $this->input->post('title'),
 				'descr' =>ascii_to_entities($this->input->post('descr')) ,
 				'category' => $this->input->post('category'),
+				'cost' => $this->input->post('cost'),
 				'tag' => $tag,
 				'status' => "pending",
 				'picture' => $picture
