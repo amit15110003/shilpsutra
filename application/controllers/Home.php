@@ -57,6 +57,18 @@ class Home extends CI_Controller {
 		$this->load->view('client/care');
 		$this->load->view('client/footer');
 	}
+	public function news()
+	{	
+		$this->load->view('client/header');
+		$this->load->view('client/news');
+		$this->load->view('client/footer');
+	}
+	public function testimonials()
+	{	
+		$this->load->view('client/header');
+		$this->load->view('client/testimonials');
+		$this->load->view('client/footer');
+	}
 
 	public function terms()
 	{	
@@ -64,7 +76,7 @@ class Home extends CI_Controller {
 		$this->load->view('client/terms');
 		$this->load->view('client/footer');
 	}
-	public function privacy_policy()
+	public function policy()
 	{	
 		$this->load->view('client/header');
 		$this->load->view('client/policy');

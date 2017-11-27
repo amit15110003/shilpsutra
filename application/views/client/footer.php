@@ -27,23 +27,26 @@
           
         </div>
 				<div class="col-md-3 col-xs-6">
-                    <h3>SHOP</h3>
+                    <h3>INFORMATION</h3>
 					<li style="list-style: none;"><a href="<?php echo base_url("index.php/home/about"); ?>" style=" text-decoration: none;color: #000;">About us</a></li>
-                <li style="list-style: none;"><a href="#" style=" text-decoration: none;color: #000;"> Blog </a></li>
-                <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/contact"); ?>" style=" text-decoration: none;color: #000;"> Contact us </a></li>
-                <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/faqs"); ?>" style=" text-decoration: none;color: #000;">FAQs</a></li>
-                <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/privacy_policy"); ?>" style=" text-decoration: none;color: #000;">Privacy Policy</a></li>
-                <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/terms_and_condition"); ?>"  style=" text-decoration: none;color: #000;">Terms & Conditions</a></li>
+                <li style="list-style: none;"><a href="size" style=" text-decoration: none;color: #000;"> Size Chart </a></li>
+                <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/policy"); ?>" style=" text-decoration: none;color: #000;"> Security & Privacy Policy </a></li>
+                <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/delivery"); ?>" style=" text-decoration: none;color: #000;">Delivery & Shipping Information</a></li>
+                <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/testimonials"); ?>" style=" text-decoration: none;color: #000;">Testimonials</a></li>
+                <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/news"); ?>"  style=" text-decoration: none;color: #000;">Shilpsutra | In News</a></li>
+                <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/terms"); ?>"  style=" text-decoration: none;color: #000;">Terms and Conditions</a></li>
 				</div>
+
 				<div class="col-md-3 col-xs-6" >
-				        <h3>LINKS</h3>
-				        <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/about"); ?>" style=" text-decoration: none;color: #000;">About us</a></li>
-				        <li style="list-style: none;"><a href="#" style=" text-decoration: none;color: #000;"> Blog </a></li>
-				        <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/contact"); ?>" style=" text-decoration: none;color: #000;"> Contact us </a></li>
-				        <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/faqs"); ?>" style=" text-decoration: none;color: #000;">FAQs</a></li>
-				        <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/privacy_policy"); ?>" style=" text-decoration: none;color: #000;">Privacy Policy</a></li>
-				        <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/terms_and_condition"); ?>"  style=" text-decoration: none;color: #000;">Terms & Conditions</a></li>
+				        <h3>SUPPORT</h3>
+				        <li style="list-style: none;"><a href="<?php echo base_url("#"); ?>" style=" text-decoration: none;color: #000;">My account</a></li>
+				        <li style="list-style: none;"><a href="<?php echo base_url("#"); ?>" style=" text-decoration: none;color: #000;"> Contact us </a></li>
+				        <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/care"); ?>" style=" text-decoration: none;color: #000;">Care for Treasure</a></li>
+				        <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/international"); ?>" style=" text-decoration: none;color: #000;">International Orders</a></li>
+				        <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/refund"); ?>"  style=" text-decoration: none;color: #000;">Refund and Cancellation</a></li>
+                <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/terms_and_condition"); ?>"  style=" text-decoration: none;color: #000;">Sitemap</a></li>
 				</div>
+
         <div class="col-md-3 col-xs-6" >
                 <h3>LINKS</h3>
                 <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/about"); ?>" style=" text-decoration: none;color: #000;">About us</a></li>

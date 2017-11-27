@@ -5,13 +5,13 @@
 </div>
 <div class="container">
 <div class="col-md-offset-1 col-md-10 ">
-<h3 class="text-center" ><u>Refund and Cancellation</u></h3><br>
+<h3 class="text-center" >Refund and Cancellation</h3><br>
 <p class="text-justify">Shilpsutra offers hassle-free returns and exchanges within 10 days from the date of delivery. Here’s how you can easily process your exchange or return.</p>
 <p class="text-justify">Conveniently place your return request online if you’ve received an order in a ‘Damaged’, ‘Defective’ or ‘Not as Described’ state. You may do this by just writing us on care@shilpsutra.com</p>
 <p class="text-justify"><b>Important: Please ensure that the product is in unused and original condition. Include everything from the package you’ve received including price tags, labels, original packing, accessories. Customer will bear the cost to origin, if returning from remote areas.</b></p>
 
 
-<h3 ><u>Hassle-free Returns:</u></h3>
+<h3 >Hassle-free Returns:</h3>
 <p class="text-justify">We try our best to offer you a hassle-free returns experience.<br>
 – Returns including all replacements/pickups are done free of cost.<br>
 – In the case of Refunds, the amount including shipping and gift wrapping charges will be transferred to your account(subject to a maximum shipping cost of Rs. 150).<br>
@@ -20,7 +20,7 @@
 – In the rare scenario where a pickup cannot be done in certain areas, you can ship the product through any other courier. You will be reimbursed the shipping charges against the original receipt.<br>
 – Replacement is subject to availability of stock. In case a Replacement is not available, we will refund the amount for the same.<br></p>
 
-<h3 ><u>Exceptions:</u></h3>
+<h3 >Exceptions:</h3>
 <p class="text-justify">There are certain scenarios where it is difficult for us to support returns.<br>
 – Return request is made outside the specified time frame.<br>
 – Anything missing from the package you’ve received including price tags, labels, original packing, freebies, and accessories.<br>
