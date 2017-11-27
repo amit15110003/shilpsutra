@@ -3,25 +3,18 @@
       <div class="row">
       <div class="col-md-6 col-md-offset-3">
       <div class="box box-primary">
-        <?php $attributes = array("name" => "attribute");
-      echo form_open("admin/attribute", $attributes);?>
-          <div class="box-body">
-            <div class="form-group">
-              <label for="">Attribute</label>
-                <input type="text" class="form-control"  name="attribute">
+        <?php $attributes = array("name" => "Size-kids");
+      echo form_open("admin/sizek", $attributes);?>
+            <div class="box-body">
+              <div class="form-group">
+                <label for="">Size-Kids</label>
+                  <input type="text" class="form-control"  name="sizek">
+              </div>
+              <div class="form-group">
+                <label for="">Description</label>
+                  <input type="text" class="form-control"  name="descr">
+              </div>
             </div>
-            <div class="form-group">
-                <label>Category</label>
-                <select class="form-control select2" style="width: 100%;" name="category">
-                <?php
-                $details=$this->user->showcategory();
-              foreach( $details as $row)
-                {?>
-                  <option value="<?php echo $row->category; ?>" ><?php echo $row->category; ?></option>
-                   <?php }?>
-                </select>
-            </div>
-          </div>
             <div class="box-footer">
               <button type="submit" class="btn btn-primary" name="submit">Submit</button>
             </div>
@@ -34,7 +27,7 @@
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Attribute</th>
+                  <th>Size-Kids</th>
                   <th></th>
                 </tr>
                 </thead>
@@ -43,8 +36,9 @@
         foreach( $query as $row)
           {?>
                 <tr>
-                  <td><?php echo $row->attribute; ?> </td>
-                  <td><a  class="btn btn-primary" href="<?php echo base_url().'index.php/admin/Deleteattribute/'.$row->id; ?>">delete</a></td>
+                  <td><?php echo $row->sizek; ?> </td>
+                  <td><?php echo $row->descr; ?> </td>
+                  <td><a  class="btn btn-primary" href="<?php echo base_url().'index.php/admin/Deletesizek/'.$row->id; ?>">delete</a></td>
                 </tr>
                  <?php }?>
                 </tfoot>

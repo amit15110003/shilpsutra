@@ -35,9 +35,9 @@
     <!-- Logo -->
     <a href="<?php echo base_url("index.php/admin"); ?>" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>THE</b>HIPPOGRIFF</span>
+      <span class="logo-mini"><b>SHILP</b>SHUTRA</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>THE</b>HIPPOGRIFF</span>
+      <span class="logo-lg"><b>SHILP</b>SHUTRA</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -56,7 +56,7 @@
                 <img src="<?php echo base_url('media/dist/img/user2-160x160.jpg'); ?>" class="img-circle" alt="User Image">
 
                 <p>
-                  <b>THE</b>HIPPOGRIFF
+                  <b>SHILP</b>SHUTRA
                 </p>
               </li>
               <!-- Menu Footer-->
@@ -104,11 +104,10 @@
             <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo base_url('index.php/admin/scategory'); ?>"><i class="fa fa-circle-o"></i>Sub-Category</a></li>
             <li><a href="<?php echo base_url('index.php/admin/category'); ?>"><i class="fa fa-circle-o"></i> Category</a></li>
-            <li><a href="<?php echo base_url('index.php/admin/artist'); ?>"><i class="fa fa-circle-o"></i> Artist</a></li>
-            <li><a href="<?php echo base_url('index.php/admin/attribute'); ?>"><i class="fa fa-circle-o"></i> Attribute</a></li>
-            <li><a href="<?php echo base_url('index.php/admin/attributevalue'); ?>"><i class="fa fa-circle-o"></i> Attribute value</a></li>
+            <li><a href="<?php echo base_url('index.php/admin/size'); ?>"><i class="fa fa-circle-o"></i>Size</a></li>
+            <li><a href="<?php echo base_url('index.php/admin/sizek'); ?>"><i class="fa fa-circle-o"></i>Size-Kids</a></li>
+            <li><a href="<?php echo base_url('index.php/admin/type'); ?>"><i class="fa fa-circle-o"></i> Color</a></li>
             <li><a href="<?php echo base_url('index.php/admin/tag'); ?>"><i class="fa fa-circle-o"></i> Tag</a></li>
           </ul>
         </li>
