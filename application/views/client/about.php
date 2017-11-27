@@ -6,7 +6,7 @@
 <div class="container">
 	<div class="col-md-offset-5 col-md-2 "><img src="<?php echo base_url();?>/media/image/pic.png" class="img-responsive center-block"></div>
 
-	<div class="">
+	<div class="col-md-offset-1 col-md-10 ">
 			<h3 class="text-center">
 				<b>Handcrafted, Bridal, Casual, Dressy, Unique & Designer Juttis from India</b>
 			</h3>
