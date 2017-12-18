@@ -1,61 +1,106 @@
 <div class="spacer"></div>
 <div id="startchange"></div>
-<div class="container single-product">
-	<div class="col-md-7 center-block single-product-image">
-		<img id="zoom_01" src="<?php echo base_url();?>uploads/thumb/<?php echo $picture;?>" data-zoom-image="<?php echo base_url();?>uploads/<?php echo $picture;?>" class="img-responsive center-block" style="margin-top: -50px;" />
+<div class="container-fluid single-product" style="margin-top: 50px;">
+	<div class="col-md-1 center-block hidden-xs">
+		<div id="gallery_01">
+ 		<div class="col-md-12 side-img active">
+			<a  href="#" class="elevatezoom-gallery active" data-update="" data-image="<?php echo base_url(); ?>uploads/thumb/<?php echo $picture;?>" 
+			data-zoom-image="<?php echo base_url(); ?>uploads/<?php echo $picture;?>">
+			<img src="<?php echo base_url(); ?>uploads/thumb/<?php echo $picture;?>" width="100" height="100" class="img-responsive center-block"  /></a>
+		</div>
+		<?php
+			if(!empty($query)){
+			 foreach ($query as $row) {?>
+ 		<div class="col-md-12 side-img">
+			<a  href="#" class="elevatezoom-gallery"
+			     data-image="<?php echo base_url(); ?>uploads/thumb/<?php echo $row->img; ?>"
+			     data-zoom-image="<?php echo base_url(); ?>uploads/<?php echo $row->img; ?>"
+			    ><img src="<?php echo base_url(); ?>uploads/thumb/<?php echo $row->img; ?>" width="100" height="100" class="img-responsive center-block"  /></a>
+		</div>
+		<?php }}?>
+		</div>
 	</div>
-	<div class="col-md-5">
-		<div class="row">
-			<div class="col-md-10 col-xs-12 ">
-				<h1 style="text-transform: capitalize;"><?php echo $title; ?> </h1>
+	<div class="col-md-6 single-product-img">
+	    <div class="col-md-12 ">
+	    	<div class="single-product-image">
+				<img style="border:1px solid #e8e8e6;" id="zoom_03" src="<?php echo base_url(); ?>uploads/thumb/<?php echo $picture;?>" 
+				data-zoom-image="<?php echo base_url(); ?>uploads/<?php echo $picture;?>" class="img-responsive center-block" />
 			</div>
-			<div class="col-md-2 col-xs-12">
-				 <?php if($this->session->userdata('uid')){?>
-			           	<?php if(!empty($this->user->check_love($this->session->userdata('uid'),$id))) {?>
-			           
-			           		<button  onclick="javascript:love(<?php echo $id;?>);" id="love" class="btn text-center love" style="background-color: #fff;border:solid 1px #ccc;"><span class="glyphicon glyphicon-heart loveremove" aria-hidden="true" id="heart" ></span>
-			           		<span class="text-center col-md-12" id="lovetext" style="font-size:12px;"><?php echo $love;?></span><span style="display: none;" id="lovetext1"><?php echo $love;?></span></button >
-			            <?php }else{?>
-			            <button  onclick="javascript:love(<?php echo $id;?>);" id="love" class="btn  text-center love" ><span class="glyphicon glyphicon-heart loveadd" aria-hidden="true" ></span>
-			           		<span class="text-center col-md-12" id="lovetext" style="font-size:12px;"><?php echo $love;?></span><span style="display: none;" id="lovetext1"><?php echo $love;?></span></button >
-			        <?php } }else {?><button  data-toggle="modal" data-target=".login" class=" btn  text-center love" ><span class="glyphicon glyphicon-heart loveadd" aria-hidden="true"></span>
-			        <span class="text-center col-md-12 " id="lovetext" style="font-size:12px;"><?php echo $love;?></span><span style="display: none;" id="lovetext1"><?php echo $love;?></span></button >
-			        <?php }?>
-				
+		</div>
+	</div>
+	<div class="col-md-5 ">
+		<div class="row">
+			<div class="col-md-12 col-xs-12 ">
+				<h1 class="text-center" style="text-transform: capitalize;font-size: 50px;font-weight: bold;"><?php echo $title; ?> </h1>
 			</div>
 		</div>
 		
 		<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-12 text-center">
 		<h5><?php $Descr=entity_decode($Descr,$charset = NULL); echo auto_typography(html_escape($Descr)); ?></h5>
 		<div><span style="font-size: 24px;"><b>&#8377; <?php echo $cost; ?></b></span></div>
 		</div>
-			<div class="col-md-6">
-				<p>Quantity</p>
-				<select class="form-control" id="qty">
-				  <option>1</option>
-				  <option>2</option>
-				  <option>3</option>
-				  <option>4</option>
-				  <option>5</option>
-				  <option>6</option>
-				  <option>7</option>
-				  <option>8</option>
-				  <option>9</option>
-				  <option>10</option>
-				</select>
+		<div class="post-list" id="postList1">
+			<div class="row">
+				<div class="col-md-12 text-center">
+						<input id="pid" class="hide" value="<?php echo $id;?>"></input>
+							<h5>Color</h5>
+						<?php $i=0; foreach ($query4 as $row) {$details=$this->user->type_color($row->color);?>
+							<button type="submit" id="color_<?php echo $i;?>" style="background-color:<?php echo $details['0']->colorcode;?>;" onclick="searchqty1(<?php echo $id;?>,<?php echo $i;?>);" value="<?php echo $row->color; ?>" class="<?php if(!empty($color)){if($row->color==$color){echo 'active-color';}}elseif($i=='0'){echo 'active';};?>"></button>
+							<?php $i++; } ?>
+				</div>
+				<div class="col-md-6" >
+					<div class="row" style="border: solid 1px  #ccc;padding: 8px 5px;">
+						<div class="col-md-6">
+							<h5>Size</h5>
+						</div>
+						<div class="col-md-6">
+							<select class="" id="size" onchange="searchqty(<?php echo $id;?>);">
+						  		<?php foreach ($query3 as $row) {?>
+						  			<option><?php echo $row->size; ?></option>
+						 		<?php } ?>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row"  style="border: solid 1px  #ccc;padding: 8px 5px;">
+					<div class="col-md-6">
+							<h5>Quantity</h5>
+					</div>
+					<div class="col-md-6">
+					<select class="" id="qty">
+					  <option>1</option>
+					  <option>2</option>
+					  <option>3</option>
+					  <option>4</option>
+					  <option>5</option>
+					  <option>6</option>
+					  <option>7</option>
+					  <option>8</option>
+					  <option>9</option>
+					  <option>10</option>
+					</select>
+				</div>
 			</div>
+				</div>
 			</div>
 			<br>
-			<div class="row">
-				<div class="col-md-12 col-xs-12" style="padding-bottom: 20px;">
+			<div class="row text-center">
+				<p><?php  echo $qty; ?> Item left!</p>
+			</div>
+			<div class="row text-center">
+				<div class="col-md-6 col-md-offset-3 col-xs-12" style="padding-bottom: 20px;">
 			            	<?php if(!empty($this->session->userdata('uid'))){?>
-			                <div class="" id="addcartbtn" ><button  class="theme-btn-lg col-md-12 col-xs-12" onclick="javascript:cartadd(<?php echo $id;?>);"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span><span class="btn-text"> Add to cart</span></button ></div>
+			                <div class="" id="addcartbtn" ><button  class="theme-btn btn col-md-12 col-xs-12" onclick="javascript:cartadd(<?php echo $id;?>);"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span><span class="btn-text"> Add to cart</span></button ></div>
 			                <?php }else{?>
-			                <div class="" id="addcartbtn" ><button  class="theme-btn-lg col-md-12 col-xs-12" onclick="javascript:cartadd1(<?php echo $id;?>);"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span><span class="btn-text"> ADD TO CART</span></button ></div>
+			                <div class="" id="addcartbtn" ><button  class="theme-btn btn col-md-12 col-xs-12" onclick="javascript:cartadd1(<?php echo $id;?>);"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span><span class="btn-text"> ADD TO CART</span></button ></div>
 			                <?php }?>
 	       		</div>
-				<div class="col-md-6 col-xs-12">
+	       	</div>
+	    </div>
+	       	<div class="row">
+				<div class="col-md-6 col-md-offset-3 col-xs-12 text-center">
 			            <?php if($this->session->userdata('uid')){?>
 			           	<?php if(!empty($this->user->check_wish($this->session->userdata('uid'),$id))) {?>
 			           	<button onclick="javascript:wishlist(<?php echo $id;?>);" class="btn col-md-12 col-xs-12 wishadd" id="wish"><span id="wishtext">ADDED TO WISHLIST</span></button>
@@ -66,6 +111,7 @@
 			          	<?php }?>
 		        </div>
 		        <div class="col-md-12 col-xs-12">
+		        <hr>
 		        	<h4>Category:<small><?php echo $category; ?></small></h4>
 		        	<h4>Tags</h4>
 		        	<?php $myArray =explode(',', $tag);
@@ -74,14 +120,14 @@
 					<?php }?>
 		        </div>
 	    	</div>
+	    </div>
 	</div>
 </div>
-<div class="container product-details">
+<!--<div class="container product-details">
 	 <ul class="nav nav-tabs text-center"  role="tablist">
 	    <li class="active"><a href="#comment" aria-controls="coment" role="tab" data-toggle="tab" style="font-size:18px;">Comments (<?php echo $review;?>)</a></li>
 	    <li ><a href="#info" aria-controls="info" role="tab" data-toggle="tab" style="font-size:18px;">Promoters</a></li>
 	  </ul>
-	  <!-- Tab panes -->
 	  <div class="tab-content">
 	    <div role="tabpanel" class="tab-pane " id="info">
 	    	 <p class=""> </p>
@@ -96,10 +142,9 @@
                 <p>&#34;<?php echo $row->review; ?>&#34;</p>
               </div>
             </div>
-            <?php  }?>
-		    <!--	<a type="button" class="" data-toggle="modal" data-target="#myModal" style="font-size: 16px;text-decoration: underline;">
+            <?php  }?>	<a type="button" class="" data-toggle="modal" data-target="#myModal" style="font-size: 16px;text-decoration: underline;">
 			 Read more
-			</a>-->
+			</a>
 			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			  <div class="modal-dialog" role="document">
 			    <div class="modal-content">
@@ -141,12 +186,12 @@
 				<button type="submit" class="theme-btn btn col-xs-12 col-md-2" >Submit</button>
 				<?php echo form_close(); }else{ ?>
 				<h5><a data-toggle="modal" data-target=".login" style="font-size:16px;" style="text-decoration:underline;">Login</a> to comment</h5>
-               <!-- <button href="#" data-toggle="modal" data-target=".login" class="btn col-md-2 col-xs-12" >LOGIN</button>--><?php }?>
+               <button href="#" data-toggle="modal" data-target=".login" class="btn col-md-2 col-xs-12" >LOGIN</button><?php }?>
 			</div>
 	    </div>
 	  </div>
 </div>
-<br><br>
+<br><br>-->
 <hr>
 <div class="container-fluid">
       <h3 class="offset-left-5">Related Products</h3>

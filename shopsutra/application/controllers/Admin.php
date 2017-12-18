@@ -410,9 +410,9 @@ public function updateproduct()
 		else
 		{
 		if(!empty($_FILES['picture']['name'])){
-                $config['upload_path'] = '../uploads/product/';
+                $config['upload_path'] = '../uploads/';
                 $config['allowed_types'] = 'jpg|jpeg|png|gif';
-                $config['file_name'] = 'category';
+                $config['file_name'] = 'product';
                 //Load upload library and initialize configuration
                 $this->load->library('upload',$config);
                 $this->upload->initialize($config);
@@ -422,10 +422,9 @@ public function updateproduct()
                      $this->gallery_path = realpath(APPPATH . '../../uploads');//fetching path
                      $config1 = array(
                           'source_image' => $uploadData['full_path'], //get original image
-                          'new_image' => $this->gallery_path.'/productthumbs/', //save as new image //need to create thumbs first
+                          'new_image' => $this->gallery_path.'/thumb/', //save as new image //need to create thumbs first
                           'maintain_ratio' => TRUE,
-                          'width' => 270,
-                          'height' => 270
+                          'width' => 600
                            
                         );
                         $this->load->library('image_lib', $config1); //load library

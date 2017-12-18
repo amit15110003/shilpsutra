@@ -5,7 +5,9 @@
 			
 			<div class="container">
       <div class="col-md-3  col-xs-12 text-center">
-          <div class="">
+             <a href="<?php echo base_url(""); ?>"><img src="<?php echo base_url();?>media/image/logo.jpg" class="img-responsive center-block"  style="height:50px;"></a>
+              <br>
+        <div class="">
           <h3 class="theme-color text-center" style="color: #000;">Follow us</h3>
             <div class="follow-icon text-center">
                     <a href="" class="follow-icon-img"><img class="img-responsive  center-block" src="<?php echo base_url();?>media/image/FB-01.png" style="width: 35px; height: 35px;"></a>
@@ -27,7 +29,8 @@
           
         </div>
 				<div class="col-md-3 col-xs-6">
-                    <h3>INFORMATION</h3>
+                    <h4>INFORMATION</h4>
+                    <div style="width: 25%;height: 1px;background-color: #000;"></div>
 					<li style="list-style: none;"><a href="<?php echo base_url("index.php/home/about"); ?>" style=" text-decoration: none;color: #000;">About us</a></li>
                 <li style="list-style: none;"><a href="size" style=" text-decoration: none;color: #000;"> Size Chart </a></li>
                 <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/policy"); ?>" style=" text-decoration: none;color: #000;"> Security & Privacy Policy </a></li>
@@ -38,7 +41,8 @@
 				</div>
 
 				<div class="col-md-3 col-xs-6" >
-				        <h3>SUPPORT</h3>
+				        <h4>SUPPORT</h4>
+                    <div style="width: 25%;height: 1px;background-color: #000;"></div>
 				        <li style="list-style: none;"><a href="<?php echo base_url("#"); ?>" style=" text-decoration: none;color: #000;">My account</a></li>
 				        <li style="list-style: none;"><a href="<?php echo base_url("#"); ?>" style=" text-decoration: none;color: #000;"> Contact us </a></li>
 				        <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/care"); ?>" style=" text-decoration: none;color: #000;">Care for Treasure</a></li>
@@ -48,7 +52,8 @@
 				</div>
 
         <div class="col-md-3 col-xs-6" >
-                <h3>LINKS</h3>
+                <h4>LINKS</h4>
+                    <div style="width: 25%;height: 1px;background-color: #000;"></div>
                 <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/about"); ?>" style=" text-decoration: none;color: #000;">About us</a></li>
                 <li style="list-style: none;"><a href="#" style=" text-decoration: none;color: #000;"> Blog </a></li>
                 <li style="list-style: none;"><a href="<?php echo base_url("index.php/home/contact"); ?>" style=" text-decoration: none;color: #000;"> Contact us </a></li>
@@ -98,9 +103,20 @@
                 $('#tag').togglebutton();
             })
         </script>
-
+    <script type="text/javascript">
+            $(document).ready(function() {
+                $('#color').togglebutton();
+            })
+    </script>
     <script>
-	   $("#zoom_01").elevateZoom(); 
+	   $("#zoom_03").elevateZoom({gallery:'gallery_01', cursor: 'pointer', galleryActiveClass: 'active', imageCrossfade: true, loadingIcon: 'http://www.elevateweb.co.uk/spinner.gif'}); 
+
+//pass the images to Fancybox
+$("#zoom_03").bind("click", function(e) {  
+  var ez =   $('#zoom_03').data('elevateZoom'); 
+  $.fancybox(ez.getGalleryList());
+  return false;
+});
 	</script>
 	<!--<script type="text/javascript">
 		var $item = $('.carousel .item'); 
@@ -157,7 +173,7 @@
       });
 
     </script>
-	<script>
+	 <script>
          function searchFilter() {
              var keywords = $('#keywords').val();
              var sortBy = $('#sortBy').val();
@@ -175,6 +191,60 @@
                  }
              });
          }
+      </script>
+      <script>
+         function searchqty(pid) {
+             var size = $('#size').val();
+             var color =  document.querySelector('.active','.color').val();
+             alert(color);
+             $.ajax({
+                 type: 'POST',
+                 url: '<?php echo base_url(); ?>index.php/product/viewqty/'+pid,
+                 data:'&size='+size+'&color='+color,
+                 beforeSend: function () {
+                     $('.loading').show();
+                 },
+                 success: function (html) {
+                     $('#postList1').html(html);
+                     $('.loading').fadeOut("slow");
+                 }
+             });
+         }
+      </script>
+      <script>
+         function searchqty1(pid,id) {
+             var size = $('#size').val();
+             var color = $('#color_'+id).val();
+             $.ajax({
+                 type: 'POST',
+                 url: '<?php echo base_url(); ?>index.php/product/viewqty/'+pid,
+                 data:'&size='+size+'&color='+color,
+                 beforeSend: function () {
+                     $('.loading').show();
+                 },
+                 success: function (html) {
+                     $('#postList1').html(html);
+                     $('.loading').fadeOut("slow");
+                 }
+             });
+         }
+      </script>
+      <script>
+             var pid = $('#pid').val();
+             var size = $('#size').val();
+             var color = $('#color_'+'0').val();
+             $.ajax({
+                 type: 'POST',
+                 url: '<?php echo base_url(); ?>index.php/product/viewqty/'+pid,
+                 data:'&size='+size+'&color='+color,
+                 beforeSend: function () {
+                     $('.loading').show();
+                 },
+                 success: function (html) {
+                     $('#postList1').html(html);
+                     $('.loading').fadeOut("slow");
+                 }
+             });
       </script>
       <script>
          function price() {

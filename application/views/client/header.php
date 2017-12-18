@@ -20,8 +20,6 @@
     <link rel="stylesheet" href="<?php echo base_url();?>media/css/prism.css">
   <script src="<?php echo base_url();?>media/js/jquery.toc.js"></script>
   <script src="<?php echo base_url();?>media/js/prism.js"></script>
-  <link rel="stylesheet" href="<?php echo base_url();?>media/css/asRange.css">
-  <script src="<?php echo base_url();?>media/js/jquery-asRange.js"></script>
 <link rel="icon" href="images/favicon.html" type="image/x-icon">
 <style type="text/css">
   
@@ -38,13 +36,20 @@
   </head>
   <body>
   <!--header-->
-   <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="row" style="background-color: #000; height: 25px;">fds</div>
+   <nav class="navbar navbar-default">
   <div class="container" style="">
-
-  <div class="header-img" style="">
-          <a href="<?php echo base_url(""); ?>"><img src="<?php echo base_url();?>media/image/logo.jpg" class="img-responsive"  style="height:50px;"></a>
-  </div>
+  <div class="row">
+          <div class="header-img" style="">
+              <a href="<?php echo base_url(""); ?>"><img src="<?php echo base_url();?>media/image/logo.jpg" class="img-responsive"  style="height:50px;"></a>
+          </div>
+          <div class="" >
+            <select class="col-md-1" style="display: block;position: absolute;right:15px;">
+                  <option>INR</option>
+                   <option>USD</option>
+                    <option>GBP</option>
+            </select>
+          </div>
+    </div>
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header" style="padding-left: 10px;">
       <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" >
@@ -181,6 +186,11 @@
               </span>-->
             </a>
           </li>
+          <?php if ($this->session->userdata('fname')){ ?>
+              <li><a data-toggle="modal" data-target=".login"><img src="<?php echo base_url();?>media/image/like.png " class="img-responsive center-block" style="height: 20px;"></a></li>
+          <?php }else{?>
+              <li><a href="<?php echo base_url("index.php/wishlist"); ?>"><img src="<?php echo base_url();?>media/image/like.png " class="img-responsive center-block" style="height: 20px;"></a></li>
+          <?php }?>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
