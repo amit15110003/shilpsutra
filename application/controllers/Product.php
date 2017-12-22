@@ -45,8 +45,11 @@ class product extends CI_Controller {
 		$category = str_replace('-', ' ', $category);
 		$title = str_replace('-', ' ', $title);
 		$details=$this->user->get_product_id($category,$title);
+		$data['query']=$this->user->get_image_id($details[0]->id);
 		$data['query1']=$this->user->get_review_id($details[0]->id);
 		$data['query2']=$this->user->showproduct_mostview_cat($category);
+		$data['query3']=$this->user->get_size_id($details[0]->id);
+		$data['query4']=$this->user->get_color_id($details[0]->id);
 			$data['id'] = $details[0]->id;
 			$data['picture'] = $details[0]->picture;
 			$data['title'] = $details[0]->title;
@@ -95,6 +98,19 @@ class product extends CI_Controller {
 		$this->load->view('client/category1',$details);
     }
 
+     function viewqty($pid)
+    {
+    	$color = $this->input->post("color");
+        $size = $this->input->post("size");
+        $details=$this->user->viewqty_product($pid,$size,$color);
+        $data['query3']=$this->user->get_size_id($pid);
+		$data['query4']=$this->user->get_color_id($pid);
+		$data['qty']=$details[0]->qty;
+		$data['id']=$pid;
+		$data['size']=$size;
+		$data['color']=$color;
+		$this->load->view('client/product1',$data);
+    }
 
 	public function login()
     {

@@ -98,15 +98,13 @@
                     { foreach ($cart as $item )
                         {
                             $details=$this->user->get_product_by_id($item['id']);
-                            $details1=$this->user->attributevalue_cost($item['attributevalue']);
-                            $i=$i+($details1[0]->cost*$item['qty']);
+                            $i=$i+($details[0]->cost*$item['qty']);
                         }
                     }
                     elseif(!empty($this->session->userdata('uid'))){
                    foreach ($query as $row ) {
                   $details=$this->user->get_product_by_id($row->productid);
-                  $details1=$this->user->attributevalue_cost($row->attributevalue);
-                   $i=$i+($details1[0]->cost*$row->item);}}
+                   $i=$i+($details[0]->cost*$row->item);}}
                    echo $i;?></span></strong></h5></td>
                     </tr>
                     <tr>
@@ -123,15 +121,13 @@
                     { foreach ($cart as $item )
                         {
                             $details=$this->user->get_product_by_id($item['id']);
-                            $details1=$this->user->attributevalue_cost($item['attributevalue']);
-                            $i=$i+($details1[0]->cost*$item['qty']);
+                            $i=$i+($details[0]->cost*$item['qty']);
                         }
                     }
                     elseif(!empty($this->session->userdata('uid'))){
                    foreach ($query as $row ) {
                   $details=$this->user->get_product_by_id($row->productid);
-                  $details1=$this->user->attributevalue_cost($row->attributevalue);
-                   $i=$i+($details1[0]->cost*$row->item);}}
+                   $i=$i+($details[0]->cost*$row->item);}}
                    echo $i;?></span></strong></h3></td>
                     </tr>
                 </tbody>

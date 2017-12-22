@@ -19,7 +19,7 @@ class Home extends CI_Controller {
 	    
 		$this->load->view('client/header.php');
 		$this->load->view('client/index');
-		$this->load->view('client/footer');
+		$this->load->view('client/footer1');
 	}
 	public function about()
 	{	

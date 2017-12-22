@@ -246,7 +246,36 @@ class user extends CI_Model
 		return $this->db->update('product', $data);
 	}
 	/*love model end*/
-
+	public function get_size_id($id)
+	{	
+		$this->db->where('productid',$id);
+		$this->db->select('size');
+		$this->db->distinct();
+		$query=$this->db->get('attributevalue');
+		return $query->result();
+	}
+	public function get_color_id($id)
+	{	
+		$this->db->where('productid',$id);
+		$this->db->select('color');
+		$this->db->distinct();
+		$query=$this->db->get('attributevalue');
+		return $query->result();
+	}
+	public function viewqty_product($pid,$size,$color)
+	{	
+		$this->db->where('productid',$pid);
+		$this->db->where('size',$size);
+		$this->db->where('color',$color);
+		$query=$this->db->get('attributevalue');
+		return $query->result();
+	}
+	public function type_color($color)
+	{	
+		$this->db->where('color',$color);
+		$query=$this->db->get('type');
+		return $query->result();
+	}
 	public function get_review_id($id)
 	{	
 		$this->db->where('productid',$id);

@@ -1,6 +1,6 @@
 <div class="spacer"></div>
 <div id="startchange"></div>
-<div class="page-header ">
+<div class="page-header">
 		<h1>My Cart</h1>	
 </div>
 <div class="container">
@@ -10,7 +10,6 @@
                 if ($cart = $this->cart->contents()){
                     foreach ($cart as $item ) {
               $details=$this->user->get_product_by_id($item['id']);
-              $details1=$this->user->attributevalue_cost($item['attributevalue']);
              ?>
             <div class="col-xs-12 col-md-12  cart-layout cart_item" id="cart_<?php echo $item['id'];?>">
                 <div class="col-md-1 col-xs-6 cart-line text-center">
@@ -82,7 +81,6 @@
                     { foreach ($cart as $item )
                         {
                             $details=$this->user->get_product_by_id($item['id']);
-                            $details1=$this->user->attributevalue_cost($item['attributevalue']);
                             $i=$i+($details[0]->cost*$item['qty']);
                         }
                     }
@@ -107,7 +105,6 @@
                     { foreach ($cart as $item )
                         {
                             $details=$this->user->get_product_by_id($item['id']);
-                            $details1=$this->user->attributevalue_cost($item['attributevalue']);
                             $i=$i+($details[0]->cost*$item['qty']);
                         }
                     }
