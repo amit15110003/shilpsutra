@@ -94,6 +94,20 @@ class Home extends CI_Controller {
 		$this->load->view('client/delivery');
 		$this->load->view('client/footer');
 	}
+	public function blog()
+	{	
+	    
+		$this->load->view('client/header');
+		$this->load->view('client/blog');
+		$this->load->view('client/footer');
+	}
+	public function blog_details()
+	{	
+	    
+		$this->load->view('client/header');
+		$this->load->view('client/blog_details');
+		$this->load->view('client/footer');
+	}
 	function search_keyword()
 	{
 		if (empty($this->input->post('keyword')))

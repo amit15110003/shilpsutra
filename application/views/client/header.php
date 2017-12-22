@@ -18,6 +18,7 @@
     <link href="<?php echo base_url();?>media/css/style.css" rel="stylesheet">
     <link href="<?php echo base_url();?>media/css/style1.css" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url();?>media/css/prism.css">
+    <link href="<?php echo base_url();?>media/css/blog.css" rel="stylesheet">
   <script src="<?php echo base_url();?>media/js/jquery.toc.js"></script>
   <script src="<?php echo base_url();?>media/js/prism.js"></script>
   <link rel="stylesheet" href="<?php echo base_url();?>media/css/asRange.css">
@@ -115,6 +116,10 @@
             <?php echo $row->category;?></a>
           </li>
         <?php }?>
+            <li>
+                <a href="<?php echo base_url(''); ?>">
+                BLOG</a>
+            </li>
       </ul>
       <ul class="nav navbar-nav navbar-right" style="padding-right: 20px;">
           <!--<li>
