@@ -1,4 +1,4 @@
-	<!--footer-->
+	<!--footer1-->
 	<footer style="padding-bottom:40px;">
 		<div class="row">
 			<hr>
