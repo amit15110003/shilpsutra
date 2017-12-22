@@ -1,6 +1,4 @@
 
-<!-- jQuery 2.2.0 -->
-<script src="<?php echo base_url('media/plugins/jQuery/jQuery-2.2.0.min.js'); ?>"></script>
 <!-- Bootstrap 3.3.6 -->
 <script src="<?php echo base_url('media/bootstrap/js/bootstrap.min.js'); ?>"></script>
 <!-- FastClick -->

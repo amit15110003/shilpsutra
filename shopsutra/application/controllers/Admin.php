@@ -250,7 +250,6 @@ class admin extends CI_Controller
         {
         	$details['query']=$this->user->showcategory();
         	$details['query1']=$this->user->showscategory();
-        	$details['query3']=$this->user->showartist();
         	$details['query2']=$this->user->showproduct();
         	$details['query4']=$this->user->showtag();
      		$this->load->view('header');
@@ -481,47 +480,48 @@ public function updateproduct()
 	}
 	
 
-	public function artist()
-	{	$this->form_validation->set_rules('artist', 'artist', 'required');
+	public function size()
+	{	$this->form_validation->set_rules('size', 'size', 'required');
 		if ($this->form_validation->run() == FALSE)
         {
-        	$details['query']=$this->user->showartist();
+        	$details['query']=$this->user->showsize();
      		$this->load->view('header');
-		$this->load->view('artist',$details);
+		$this->load->view('size',$details);
 		$this->load->view('footer');
         }
 		else
 		{
 			$data = array(
-				'artist' => $this->input->post('artist')
+				'size' => $this->input->post('size'),
+				'descr' => $this->input->post('descr')
 			);
-		if ($this->user->insert_artist($data))
+		if ($this->user->insert_size($data))
 			{
 				$this->session->set_flashdata('msg','<div class="alert alert-success text-center"> Successfully Updated</div>');
-				redirect('admin/artist');
+				redirect('admin/size');
 			}
 			else
 			{
 				// error
 				$this->session->set_flashdata('msg','<div class="alert alert-danger text-center">Oops! Error.  Something Went Wrong</div>');
-				redirect('admin/purity');
+				redirect('admin/size');
 			}
 		}
 	
 		
 	}
-	public function Deleteartist($id)
+	public function Deletesize($id)
 	{
 			
-		$details['query']=$this->user->showartist();
+		$details['query']=$this->user->showsize();
      		$this->load->view('header');
-		$this->load->view('artist',$details);
+		$this->load->view('size',$details);
 		$this->load->view('footer');
 	  
 	  echo "<script>
 	 x = confirm ('You want to proceed deleting?')";
 	 
-	  $r=$this->user->deleteartist($id);
+	  $r=$this->user->deletesize($id);
 	  if($r){
 	  echo "Successfully Deleted Data";
 	  }
@@ -531,52 +531,51 @@ public function updateproduct()
 	  
 	   
 	  
-	  redirect('admin/artist');
+	  redirect('admin/size');
 	 
 	}
-
-	public function attribute()
-	{	$this->form_validation->set_rules('attribute', 'attribute', 'required');
+	public function sizek()
+	{	$this->form_validation->set_rules('sizek', 'sizek', 'required');
 		if ($this->form_validation->run() == FALSE)
         {
-        	$details['query']=$this->user->showattribute();
+        	$details['query']=$this->user->showsizek();
      		$this->load->view('header');
-		$this->load->view('attribute',$details);
+		$this->load->view('sizek',$details);
 		$this->load->view('footer');
         }
 		else
 		{
 			$data = array(
-				'attribute' => $this->input->post('attribute'),
-				'category' => $this->input->post('category')
+				'sizek' => $this->input->post('sizek'),
+				'descr' => $this->input->post('descr')
 			);
-		if ($this->user->insert_attribute($data))
+		if ($this->user->insert_sizek($data))
 			{
 				$this->session->set_flashdata('msg','<div class="alert alert-success text-center"> Successfully Updated</div>');
-				redirect('admin/attribute');
+				redirect('admin/sizek');
 			}
 			else
 			{
 				// error
 				$this->session->set_flashdata('msg','<div class="alert alert-danger text-center">Oops! Error.  Something Went Wrong</div>');
-				redirect('admin/attribute');
+				redirect('admin/sizek');
 			}
 		}
 	
 		
 	}
-	public function Deleteattribute($id)
+	public function Deletesizek($id)
 	{
 			
-		$details['query']=$this->user->showattribute();
+		$details['query']=$this->user->showsizek();
      		$this->load->view('header');
-		$this->load->view('attribute',$details);
+		$this->load->view('sizek',$details);
 		$this->load->view('footer');
 	  
 	  echo "<script>
 	 x = confirm ('You want to proceed deleting?')";
 	 
-	  $r=$this->user->deleteattribute($id);
+	  $r=$this->user->deletesizek($id);
 	  if($r){
 	  echo "Successfully Deleted Data";
 	  }
@@ -586,64 +585,10 @@ public function updateproduct()
 	  
 	   
 	  
-	  redirect('admin/attribute');
+	  redirect('admin/sizek');
 	 
 	}
-	public function attributevalue()
-	{	$this->form_validation->set_rules('attributevalue', 'attributevalue', 'required');
-		if ($this->form_validation->run() == FALSE)
-        {
-        	$details['query']=$this->user->showattributevalue();
-     		$this->load->view('header');
-		$this->load->view('attributevalue',$details);
-		$this->load->view('footer');
-        }
-		else
-		{
-			$data = array(
-				'attribute' => $this->input->post('attribute'),
-				'attributevalue' => $this->input->post('attributevalue'),
-				'cost' => $this->input->post('cost')
-			);
-		if ($this->user->insert_attributevalue($data))
-			{
-				$this->session->set_flashdata('msg','<div class="alert alert-success text-center"> Successfully Updated</div>');
-				redirect('admin/attributevalue');
-			}
-			else
-			{
-				// error
-				$this->session->set_flashdata('msg','<div class="alert alert-danger text-center">Oops! Error.  Something Went Wrong</div>');
-				redirect('admin/attributevalue');
-			}
-		}
 	
-		
-	}
-	public function Deleteattributevalue($id)
-	{
-			
-		$details['query']=$this->user->showattributevalue();
-     		$this->load->view('header');
-		$this->load->view('attributevalue',$details);
-		$this->load->view('footer');
-	  
-	  echo "<script>
-	 x = confirm ('You want to proceed deleting?')";
-	 
-	  $r=$this->user->deleteattributevalue($id);
-	  if($r){
-	  echo "Successfully Deleted Data";
-	  }
-	  else {
-		  echo "Can Not Delete Data";
-	  }
-	  
-	   
-	  
-	  redirect('admin/attributevalue');
-	 
-	}
 	public function tag()
 	{	$this->form_validation->set_rules('tag', 'tag', 'required');
 		if ($this->form_validation->run() == FALSE)
@@ -752,7 +697,65 @@ public function updateproduct()
 	  redirect('admin/type');
 	 
 	}
-
+	public function attributevalue($pid)
+	{	
+		$details['pid']=$pid;
+		$this->form_validation->set_rules('qty', 'qty', 'required');
+		if ($this->form_validation->run() == FALSE)
+        {		$details['query1']=$this->user->showattribute($pid);
+        		$details['query3']=$this->user->showsize();
+        		$details['query5']=$this->user->showsizek();
+        		$details['query6']=$this->user->showtype();    
+     			$this->load->view('header');
+				$this->load->view('attributevalue',$details);
+				$this->load->view('footer');
+		}
+		else
+		{	
+			$pid=$this->input->post('productid');
+			$qty=$this->input->post('qty');
+			$size=$this->input->post('size');
+			$sizek=$this->input->post('sizek');
+			$color=$this->input->post('color');
+			foreach ($size as $row)
+			{
+				foreach ($color as $row1) 
+				{
+					if(!empty($row1))
+					{
+						$this->user->insert_attributevalue($pid,$row,$row1,$qty);
+					}	
+				}
+			}
+			foreach ($sizek as $row)
+			{
+				foreach ($color as $row1) 
+				{
+					if(!empty($row1))
+					{
+						$this->user->insert_attributevalue($pid,$row,$row1,$qty);
+					}	
+				}
+			}
+			
+			$this->session->set_flashdata('msg','<div class="alert alert-success text-center"> Successfully Updated</div>');
+				redirect('admin/attributevalue/'. $pid);
+			
+		} 
+	
+		
+	}
+	 public function updateqty()
+    {
+    	$id=$this->input->post('id');
+    	$item=$this->input->post('item');
+		$this->db->query('update attributevalue set qty="'.$item.'" where id="'.$id.'"');
+    }	
+     public function attributevaluereset()
+    {
+    	$id=$this->input->post('id');
+		$this->db->delete('attributevalue', array('productid'=>$id));
+    }
 	public function slider()
 	{	if($this->input->post('userSubmit'))
 		{

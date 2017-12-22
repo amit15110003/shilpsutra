@@ -66,6 +66,7 @@
                 <tr>
                   <td><?php echo $row->title; ?> </td>
                   <td><a  class="btn btn-primary" href="<?php echo base_url().'index.php/admin/Deletelibrary/'.$row->id; ?>">delete</a></td>
+                  <td><a  class="btn btn-primary" href="<?php echo base_url().'index.php/admin/attributevalue/'.$row->id; ?>">Attribute</a></td>
                   <td><a  class="btn btn-primary" href="<?php echo base_url().'index.php/admin/productedit/'.$row->id; ?>">Edit</a></td>
                 </tr>
                  <?php }?>

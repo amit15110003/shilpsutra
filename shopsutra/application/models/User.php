@@ -173,47 +173,33 @@ class user extends CI_Model
 		$this->db->where('id', $id);
 	return($this->db->delete('scategory'));
 	}
-	function insert_artist($data)
+	function insert_size($data)
     {
-		return $this->db->insert('artist', $data);
+		return $this->db->insert('size', $data);
 	}
-	public function showartist()
+	public function showsize()
 	{
-		$query=$this->db->get('artist');
+		$query=$this->db->get('size');
 		return $query->result();
 	}
-	public function deleteartist($id)
+	public function deletesize($id)
 	{
 		$this->db->where('id', $id);
-	return($this->db->delete('artist'));
+	return($this->db->delete('size'));
 	}
-	function insert_attribute($data)
+	function insert_sizek($data)
     {
-		return $this->db->insert('attribute', $data);
+		return $this->db->insert('sizek', $data);
 	}
-	public function showattribute()
+	public function showsizek()
 	{
-		$query=$this->db->get('attribute');
+		$query=$this->db->get('sizek');
 		return $query->result();
 	}
-	public function deleteattribute($id)
+	public function deletesizek($id)
 	{
 		$this->db->where('id', $id);
-	return($this->db->delete('attribute'));
-	}
-	function insert_attributevalue($data)
-    {
-		return $this->db->insert('attributevalue', $data);
-	}
-	public function showattributevalue()
-	{
-		$query=$this->db->get('attributevalue');
-		return $query->result();
-	}
-	public function deleteattributevalue($id)
-	{
-		$this->db->where('id', $id);
-	return($this->db->delete('attributevalue'));
+	return($this->db->delete('sizek'));
 	}
 	function insert_tag($data)
     {
@@ -242,6 +228,26 @@ class user extends CI_Model
 	{
 		$this->db->where('id', $id);
 	return($this->db->delete('type'));
+	}
+	public function showattribute($id)
+	{
+		$this->db->where('productid', $id);
+		$query=$this->db->get('attributevalue');
+		return $query->result();
+	}
+	function insert_attributevalue($pid,$size,$color,$qty)
+    {
+    	$this->db->select('id');
+		$this->db->from('attributevalue');
+		$this->db->where(array('productid'=>$pid,'size'=>$size,'color'=>$color));
+		$prevQuery = $this->db->get();
+		$prevCheck = $prevQuery->num_rows();
+		if($prevCheck > 0){
+		}
+		else{
+			$data = array('productid'=>$pid, 'size'=>$size, 'color'=>$color,'qty'=>$qty);
+		return $this->db->insert('attributevalue', $data);
+		}
 	}
 	public function showproduct()
 	{

@@ -8,7 +8,6 @@
 		<div class="row">
 			<div class="col-md-10 col-xs-12 ">
 				<h1 style="text-transform: capitalize;"><?php echo $title; ?> </h1>
-				<p><?php if(!empty($artist)) {?> By <?php echo $artist; }?></p>
 			</div>
 			<div class="col-md-2 col-xs-12">
 				 <?php if($this->session->userdata('uid')){?>
@@ -31,17 +30,6 @@
 		<h5><?php $Descr=entity_decode($Descr,$charset = NULL); echo auto_typography(html_escape($Descr)); ?></h5>
 		<div><span style="font-size: 24px;"><b>&#8377; <?php echo $cost; ?></b></span></div>
 		</div>
-		 <?php $details=$this->user->showattribute($category);
-		 foreach($details as $row ){?>
-			<div class="col-md-6">
-				<p><?php echo $row->attribute;?></p>
-				<select class="form-control">
-			      <?php $details=$this->user->showattributevalue($row->attribute);
-		 			foreach($details as $row ){?>
-				 		 <option  value="<?php echo $row->cost;?>"><?php echo $row->attributevalue;?></option>
-				  <?php }?>
-				</select>
-			</div><?php }?>
 			<div class="col-md-6">
 				<p>Quantity</p>
 				<select class="form-control" id="qty">

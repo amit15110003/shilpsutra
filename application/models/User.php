@@ -131,30 +131,7 @@ class user extends CI_Model
 	    return NULL;
 
 	}
-	function countproduct_artist($artist)
-	{	
-		$this->db->where('artist', $artist);
-		$this->db->where('status', "hosted");
-		$this->db->select_sum('id');
-	    $this->db->from('product');
-
-	    $total_a = $this->db->count_all_results();
-
-	    if ($total_a > 0)
-	    {
-	        return $total_a;
-	    }
-
-	    return NULL;
-
-	}
 	
-	
-	
-	public function showartist()
-	{   $query=$this->db->get('artist');;
-		return $query->result();
-	}
 	public function showtype()
 	{
 		$query=$this->db->get('type');;
@@ -167,26 +144,7 @@ class user extends CI_Model
 		$this->db->where('status', "hosted");
 		return $query->result();
 	}
-	public function showattribute($category)
-	{
-		$this->db->where('category',$category);
-		$query=$this->db->get('attribute');
-		return $query->result();
-	}
-	public function showattributevalue($attribute)
-	{		
-
-		$this->db->where('attribute',$attribute);
-		$query=$this->db->get('attributevalue');
-		return $query->result();
-	}
-	public function attributevalue_cost($attributevalue)
-	{		
-
-		$this->db->where('attributevalue',$attributevalue);
-		$query=$this->db->get('attributevalue');
-		return $query->result();
-	}
+	
 	public function showproduct_category($limit, $start,$category)
 	{	
 		$this->db->limit($limit, $start);
@@ -202,23 +160,6 @@ class user extends CI_Model
         }
         return false;
 	}
-	public function showproduct_artist($limit, $start,$artist)
-	{	
-		$this->db->limit($limit, $start);
-		$this->db->where('artist', $artist);
-		$this->db->where('status', "hosted");
-		$query=$this->db->get('product');
-		
-        if ($query->num_rows() > 0) {
-            foreach ($query->result() as $row) {
-                $data[] = $row;
-            }
-            return $data;
-        }
-        return false;
-	}
-
-
 	public function get_product_id($category,$title)
 	{	
 		$this->db->where('category', $category);
