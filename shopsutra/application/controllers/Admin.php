@@ -814,6 +814,7 @@ public function updateproduct()
 		}
 
 	}
+
 	public function Deleteslider($id)
 	{
 			
@@ -838,6 +839,72 @@ public function updateproduct()
 	  redirect('admin/slider');
 	 
 	}
+
+	public function blog()
+	{	
+		$this->form_validation->set_rules('title', 'title', 'required');
+		   
+		if ($this->form_validation->run() == FALSE)
+        {
+     		$this->load->view('header');
+			$this->load->view('blog');
+			$this->load->view('footer');
+
+        }
+		else
+		{
+			if(!empty($_FILES['picture']['name'])){
+                $config['upload_path'] = '../uploads/';
+                $config['allowed_types'] = 'jpg|jpeg|png|gif';
+                $config['file_name'] = "product";
+                
+                //Load upload library and initialize configuration
+                $this->load->library('upload',$config);
+                $this->upload->initialize($config);
+                
+                if($this->upload->do_upload('picture')){
+                    $uploadData = $this->upload->data();
+                     $this->gallery_path = realpath(APPPATH . '../../uploads/');//fetching path
+                     $config1 = array(
+                          'source_image' => $uploadData['full_path'], //get original image
+                          'new_image' => $this->gallery_path.'/thumb/', //save as new image //need to create thumbs first
+                          'maintain_ratio' => TRUE,
+                          'width' => 600
+                           
+                        );
+                        $this->load->library('image_lib', $config1); //load library
+                        $this->image_lib->resize(); //generating thumb
+
+                    $picture = $uploadData['file_name'];
+                }
+                else{
+                    $picture = '';
+            }
+            }else{
+                $picture = '';
+            }
+            $tag=implode(",",$this->input->post('tag'));
+			$data = array(
+				
+				'title' => $this->input->post('title'),
+				'sdescr' =>$this->input->post('sdescr'),
+				'descr' => $this->input->post('descr'),
+				'status' => "pending",
+				'image' => $picture
+			);
+		if($this->user->insert_blog($data))
+		{
+			$this->session->set_flashdata('msg','<div class="alert alert-success text-center"> Successfully Updated</div>');
+				redirect('admin/blog');
+			}
+			else
+			{
+				// error
+				$this->session->set_flashdata('msg','<div class="alert alert-danger text-center">Oops! Error.  Something Went Wrong</div>');
+				redirect('admin/blog');
+			}
+	}
+}
 	 
 		
 }

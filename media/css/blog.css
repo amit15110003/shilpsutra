@@ -37,6 +37,7 @@ ul.blog-post li {
   border-radius: 3px;
 	padding: 1.5em;
   width: 400px;
+  height: 350px;
 	margin: 0 0 2.5% 2.5%;
 	background: #fff;
 	border: 1px solid #eee;
@@ -51,7 +52,7 @@ ul.blog-post li {
 
 ul.blog-post li img {
 	max-width: 100%;
-	height: auto;
+	height: 50%;
 	margin: 0 0 10px;
 }
 

@@ -374,4 +374,8 @@ class user extends CI_Model
 		$this->db->where('id', $id);
 	return($this->db->delete('slider'));
 	}
+	function insert_blog($data)
+    {
+		return $this->db->insert('blog', $data);
+	}
 }?>

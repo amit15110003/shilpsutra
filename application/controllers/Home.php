@@ -96,9 +96,9 @@ class Home extends CI_Controller {
 	}
 	public function blog()
 	{	
-	    
+	    $details['query']=$this->user->showblog();
 		$this->load->view('client/header');
-		$this->load->view('client/blog');
+		$this->load->view('client/blog',$details);
 		$this->load->view('client/footer');
 	}
 	public function blog_details()

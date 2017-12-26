@@ -27,6 +27,7 @@
   <!-- jQuery 2.2.0 -->
 <script src="<?php echo base_url('media/plugins/jQuery/jQuery-2.2.0.min.js'); ?>"></script>
 
+
   </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -114,6 +115,11 @@
         <li>
           <a href="<?php echo base_url('index.php/admin/order'); ?>">
             <i class="fa fa-th"></i> <span>Order</span>
+          </a>
+        </li>
+        <li>
+          <a href="<?php echo base_url('index.php/admin/blog'); ?>">
+            <i class="fa fa-th"></i> <span>Blog</span>
           </a>
         </li>
       </ul>

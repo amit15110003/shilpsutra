@@ -591,4 +591,10 @@ class user extends CI_Model
                 $this->db->where('id', $id);
                return  $this->db->delete('wishlist'); 
 	}
+	
+	public function showblog()
+	{
+		$query=$this->db->get('blog');;
+		return $query->result();
+	}
 }?>
